@@ -1,8 +1,12 @@
+import './style.scss'
 
 export function Home () {
     return (
         <>
-            <h1>Home Page</h1>
+            <body>
+                <h1>Home Page</h1>
+
+            </body>
         </>
     )
 }
