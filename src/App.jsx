@@ -1,18 +1,17 @@
-import { Outlet } from "react-router-dom"
-import { Menu } from "./components/Gerais/Menu"
-import { Rodape } from "./components/Gerais/Rodape"
-import { Home } from "./components/Pages/HomePage"
+import { BrowserRouter } from 'react-router-dom'
+import Router from './router'
+import { Home } from './components/Pages/HomePage'
 
 import './components/Pages/HomePage/style.scss'
 
-// import { useState } from 'react'
-
-
 function App() {
   return (
-    <body>
+    <>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
       <Home />
-    </body>
+    </>
   )
 }
 
