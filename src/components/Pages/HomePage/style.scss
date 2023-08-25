@@ -1,6 +1,12 @@
 @use '/src/variaveis';
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background: var(--linear-bg, linear-gradient(0deg, rgba(0, 0, 0, 0.22) 0%, rgba(0, 0, 0, 0.22) 100%), linear-gradient(1deg, #000 27.60%, #36054D 65.63%, #000 91.67%));
-    mix-blend-mode: multiply;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.22) 0%, rgba(0, 0, 0, 0.22) 100%), linear-gradient(1deg, #000 27.60%, #36054D 65.63%, #000 91.67%);
 }
