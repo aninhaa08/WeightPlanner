@@ -1,12 +1,10 @@
-@use '/src/variaveis';
+@import '/src/variaveis';
+@import '../../../global.scss';
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+#tituloHome {
+    color: $white;
+    font-size: 3rem;
 
-body {
-    height: 100vh;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.22) 0%, rgba(0, 0, 0, 0.22) 100%), linear-gradient(1deg, #000 27.60%, #36054D 65.63%, #000 91.67%);
+    // margin-top: 12.19rem;
+    margin-top: 4rem;
 }

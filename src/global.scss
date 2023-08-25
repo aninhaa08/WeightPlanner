@@ -1,0 +1,19 @@
+@import './variaveis';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Lexend Giga', sans-serif;
+    // color: $white;
+}
+
+body {
+    height: 100vh;
+    background: $linear-bg;    
+}
+
+h1 {
+    font-weight: 400;
+}
