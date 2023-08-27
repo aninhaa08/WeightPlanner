@@ -2,20 +2,24 @@
 
 #barraNavegacao {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    height: 2.50rem;
+    padding: 0 2rem;
     
     
-
     background: $light-grayish;
     color: $black; 
 }
 
-ul {
-    list-style: none;
+// nav 
 
-    li {
-        display: flex;
-        text-decoration: none;
-    }
-}
+// ul {
+//     list-style: none;
+
+//     li {
+//         display: flex;
+//         text-decoration: none;git 
+//     }
+// }
+
