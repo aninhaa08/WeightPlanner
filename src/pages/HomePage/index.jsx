@@ -1,6 +1,6 @@
 import './style.scss'
 import { Link } from 'react-router-dom'
-import Dbalanca from '../../../assets/balanca3d.svg'
+import Dbalanca from '../../assets/balanca3d.svg'
 
 
 export function Home() {

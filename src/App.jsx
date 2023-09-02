@@ -1,6 +1,6 @@
 import { BrowserRouter } from 'react-router-dom'
 import Router from './router'
-import Menu from './components/Gerais/Menu'
+import Menu from './components/Menu'
 // import { Home } from './components/Pages/HomePage'
 
 // import './components/Pages/HomePage/style.scss'

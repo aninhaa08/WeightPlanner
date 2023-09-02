@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom'
-import { Home } from './components/Pages/HomePage'
-import { Objetivo } from './components/Pages/Objetivo'
-import { PublicoAlvo } from './components/Pages/PublicoAlvo'
-import { Componentes } from './components/Pages/Componentes'
-import { Funcionamento } from './components/Pages/Funcionamento'
-import { Bibliografia } from './components/Pages/Bibliografia'
+import { Home } from './pages/HomePage'
+import { Objetivo } from './pages/Objetivo'
+import { PublicoAlvo } from './pages/PublicoAlvo'
+import { Componentes } from './pages/Componentes'
+import { Funcionamento } from './pages/Funcionamento'
+import { Bibliografia } from './pages/Bibliografia'
 
 
 function Router() {
