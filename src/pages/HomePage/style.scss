@@ -1,7 +1,7 @@
 @import '/src/variaveis';
 
 .homeConteudo {
-   width: 100vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
 
@@ -10,7 +10,7 @@
 }
 
 #tituloHome {
-    font-size: 1.25rem;
+    font-size: 15px;
     margin: 3.44rem 0 0;
     text-transform: uppercase;
 }

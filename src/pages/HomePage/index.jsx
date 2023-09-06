@@ -28,8 +28,6 @@ export function Home() {
                 <div id="linhaDireita"></div>
             </div>
         </div>
-            
-            {/* <Link to={"/componentes"}>Componentes</Link> */}
         </div>
     )
 }

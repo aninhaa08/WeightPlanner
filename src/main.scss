@@ -12,16 +12,17 @@
 body {
     background: $linear-bg;
     color: $white;
+    overflow-x: hidden;
 }
 
 h1 {
     font-weight: 400;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
-}
+// html, body {
+//     width: 100%;
+//     height: 100%;
+// }
 
 #root {
     width: 100%;
