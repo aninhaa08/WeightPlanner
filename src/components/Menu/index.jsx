@@ -42,8 +42,6 @@ function Menu() {
             <div></div>
             <Link to={"/componentes"}> Componentes </Link>
             <div></div>
-            <Link to={"/funcionamento"}> Funcionamento </Link>
-            <div></div>
             <Link to={"/bibliografia"}> Bibliografia </Link>
             <div></div>
           </nav>
@@ -56,7 +54,6 @@ function Menu() {
             <Link to={"/objetivo"}> Objetivo </Link>
             <Link to={"/publico"}> Público Alvo </Link>
             <Link to={"/componentes"}> Componentes </Link>
-            <Link to={"/funcionamento"}> Funcionamento </Link>
             <Link to={"/bibliografia"}> Bibliografia </Link>
         </nav>
       </div>
