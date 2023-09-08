@@ -45,6 +45,7 @@
 
 .containerCard {
     display: flex;
+    
 }
 
 .girar-card {
@@ -91,6 +92,7 @@
     backface-visibility: hidden;
     border: 1px solid $violet;
     border-radius: 1rem;
+    z-index: 0;
 }
   
 .frente-card {

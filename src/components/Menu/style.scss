@@ -1,27 +1,75 @@
 @import '/src/variaveis';
 
-#barraNavegacao {
-    max-width: 100%;
-    overflow: hidden;
+.menuFechado {
+    height: 2.4rem;
+    padding-inline: 2rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 2.50rem;
-    padding: 0 2rem;
-    
-    
+    justify-content: space-between;
+    width: 90%;
+
     background: $light-grayish;
-    color: $black; 
+
+    a {
+        text-decoration: none;
+        color: $black;
+    }
+
+    button {
+        border: 0;
+        background: none;
+    }
 }
 
-// nav 
+.menu {
+    width: 100%;
+    height: calc(100vh - 2.4rem);
+    padding-right: 2rem;
+    transition: translate .3s;
+    display: flex;
+    flex-direction: column;
+    background: $light-grayish;
+    position: absolute;
+    z-index: 1;
 
-// ul {
-//     list-style: none;
 
-//     li {
-//         display: flex;
-//         text-decoration: none;git 
-//     }
-// }
 
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        
+        a {
+            text-decoration: none;
+            color: $black;
+        }
+
+        div {
+            border-top: 0.5px solid $black;
+            width: 18.5rem;
+        }
+    }
+
+    
+}
+
+.menu.close {
+    translate: -100%;
+}
+
+#menu-desktop {
+    display: none;
+}
+
+@media (min-width: 900px) {
+    #menu-mobile {
+        display: none;
+    }
+
+    #menu-desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

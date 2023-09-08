@@ -8,37 +8,57 @@ import {
   PiBookOpenText,
   PiList, 
   PiX
-} from "react-icons/pi";
-import { useRef } from 'react';
+} from "react-icons/pi"
+import { useState } from 'react'
 
 
 function Menu() {
+  const [controlar, setControlar] = useState(false)
 
-  const menuRef = useRef();
+  function handleMostrarMenu() {
+    if(controlar) {
+      setControlar(false)
+      return
+    }
 
-  const mostrarMenu = () => {
-    menuRef.current.classList.toggle("menuResponsivo");
+    setControlar(true)
   }
 
   return (
     <header>
-      <div id='barraNavegacao'>
-        <Link to={"/"}>logo</Link>
-        {/* <img src="" alt="" /> */} 
-        <nav ref={menuRef}>
-          <Link to={"/objetivo"}> <PiLightbulb /> </Link>
-          <Link to={"/publico"}> <PiChalkboardTeacher /> </Link>
-          <Link to={"/componentes"}> <PiWrench /> </Link>
-          <Link to={"/funcionamento"}> <PiFilmReel /> </Link>
-          <Link to={"/bibliografia"}> <PiBookOpenText /> </Link>
+      <div id='menu-mobile'>
+        
+        <div className="menuFechado">
+          <Link className='logo' to={"/"}>logo</Link>
+          <button onClick={handleMostrarMenu}>{controlar == true ? <PiX size={21} /> : <PiList size={21} />}</button>
+        </div>
 
-          <button className='botaoMenu botaoFechar' onClick={mostrarMenu}>
-            <PiX />
-          </button>
+        {/* <img src="" alt="" /> */} 
+        <div className={`menu ${controlar == true ? "" : "close"}`}>
+          <nav>
+            <Link to={"/objetivo"}> Objetivo </Link>
+            <div></div>
+            <Link to={"/publico"}> Público Alvo </Link>
+            <div></div>
+            <Link to={"/componentes"}> Componentes </Link>
+            <div></div>
+            <Link to={"/funcionamento"}> Funcionamento </Link>
+            <div></div>
+            <Link to={"/bibliografia"}> Bibliografia </Link>
+            <div></div>
+          </nav>
+        </div>
+      </div>
+
+      <div id="menu-desktop">
+      <Link className='logo' to={"/"}>logo</Link>
+        <nav>
+            <Link to={"/objetivo"}> Objetivo </Link>
+            <Link to={"/publico"}> Público Alvo </Link>
+            <Link to={"/componentes"}> Componentes </Link>
+            <Link to={"/funcionamento"}> Funcionamento </Link>
+            <Link to={"/bibliografia"}> Bibliografia </Link>
         </nav>
-        <button className='botaoMenu' onClick={mostrarMenu}>
-          <PiList />
-        </button>
       </div>
     </header>
   )
