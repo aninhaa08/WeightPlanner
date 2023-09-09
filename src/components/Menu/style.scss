@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
 
     background: $light-grayish;
 
@@ -60,7 +60,6 @@
 
 #menu-desktop {
     display: none;
-    background: $light-grayish;
 }
 
 @media (min-width: 900px) {
@@ -70,7 +69,14 @@
 
     #menu-desktop {
         display: flex;
-        justify-content: space-between;
+        background: $light-grayish;
+        justify-content: center;
         align-items: center;
+        height: 2.5rem;
+
+        a {
+            text-decoration: none;
+            color: $black;
+        }
     }
 }
