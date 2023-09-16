@@ -1,12 +1,11 @@
 @import '/src/variaveis';
 
 .homeConteudo {
-    width: 100%;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 #tituloHome {
@@ -23,19 +22,54 @@
 
 .ctHome {
     margin-top: 1.81rem;
-    margin-inline: auto;
     width: 80%;
 }
 
 #textoPrincipal {
-    text-align: center;
     font-size: 0.625rem;
 }
 
 .dbalanca {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     margin-top: 5rem;
 }
+
+
+// .homeConteudo {
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// #tituloHome {
+//     font-size: 15px;
+//     margin: 3.44rem 0 0;
+//     text-transform: uppercase;
+// }
+
+// #linha {
+//     border: 1px solid $white;
+//     width: 16.9rem;
+//     margin: 0.69rem 0;
+// }
+
+// .ctHome {
+//     margin-top: 1.81rem;
+//     margin-inline: auto;
+//     width: 80%;
+// }
+
+// #textoPrincipal {
+//     text-align: center;
+//     font-size: 0.625rem;
+// }
+
+// .dbalanca {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+//     margin-top: 5rem;
+// }
