@@ -1,11 +1,6 @@
 import './style.scss'
 import { Link } from 'react-router-dom'
 import { 
-  PiLightbulb, 
-  PiChalkboardTeacher, 
-  PiWrench, 
-  PiFilmReel, 
-  PiBookOpenText,
   PiList, 
   PiX
 } from "react-icons/pi"
