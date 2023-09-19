@@ -9,9 +9,15 @@
 }
 
 #tituloHome {
-    font-size: 15px;
+    font-size: 1.875rem;
     margin: 3.44rem 0 0;
-    text-transform: uppercase;
+}
+
+#subtituloHome {
+    font-weight: 400;
+    font-size: 0.9375rem;
+    color: $purple-pink;
+    margin-block: 0.30rem;
 }
 
 #linha {
@@ -32,44 +38,3 @@
 .dbalanca {
     margin-top: 5rem;
 }
-
-
-// .homeConteudo {
-//     width: 100%;
-//     display: flex;
-//     flex-direction: column;
-
-//     align-items: center;
-//     justify-content: center;
-// }
-
-// #tituloHome {
-//     font-size: 15px;
-//     margin: 3.44rem 0 0;
-//     text-transform: uppercase;
-// }
-
-// #linha {
-//     border: 1px solid $white;
-//     width: 16.9rem;
-//     margin: 0.69rem 0;
-// }
-
-// .ctHome {
-//     margin-top: 1.81rem;
-//     margin-inline: auto;
-//     width: 80%;
-// }
-
-// #textoPrincipal {
-//     text-align: center;
-//     font-size: 0.625rem;
-// }
-
-// .dbalanca {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-
-//     margin-top: 5rem;
-// }
