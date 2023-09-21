@@ -7,7 +7,7 @@ import {
 } from "react-icons/pi"
 import { useState } from 'react'
 import Logo from '../../assets/logoMobile.png'
-import LogoWeb from '../../assets/LogoWebPretoEditada.svg'
+import LogoWeb from '../../assets/LogoWebPreto.png'
 
 
 function Menu() {
@@ -27,18 +27,20 @@ function Menu() {
       <div id='menu-mobile'>
         
         <div className="menuFechado">
-          <Link className='logo' to={"/"}> <img src={Logo} alt="" /> </Link>
+          <Link className='logo' onClick={`menu ${controlar == false}`} to={"/"}> <img src={Logo} alt="" /> </Link>
           <button onClick={handleMostrarMenu}>{controlar == true ? <PiX size={21} /> : <PiList size={21} />}</button>
         </div>
 
         {/* <img src="" alt="" /> */} 
         <div className={`menu ${controlar == true ? "" : "close"}`}>
           <nav>
-            <Link onClick={`menu ${controlar == false}`} to={"/objetivo"}> Objetivo </Link>
+            <Link onClick={`menu ${controlar == false}`} to={"/login"}> Login | Registrar </Link>
+            <div></div>
+            <Link onClick={`menu ${controlar == false}`} to={"/objetivo"}> Nosso objetivo </Link>
             <div></div>
             <Link onClick={`menu ${controlar == false}`} to={"/publico"}> Público Alvo </Link>
             <div></div>
-            <Link onClick={`menu ${controlar == false}`} to={"/componentes"}> Componentes </Link>
+            <Link onClick={`menu ${controlar == false}`} to={"/componentes"}> Componentes e valores </Link>
             <div></div>
             <Link onClick={`menu ${controlar == false}`} to={"/bibliografia"}> Bibliografia </Link>
             <div></div>
