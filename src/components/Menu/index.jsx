@@ -7,6 +7,7 @@ import {
 } from "react-icons/pi"
 import { useState } from 'react'
 import Logo from '../../assets/logoMobile.png'
+import LogoBranco from '../../assets/logoMobileBranco.png'
 import LogoWeb from '../../assets/LogoWebPreto.png'
 
 
@@ -26,8 +27,8 @@ function Menu() {
     <header>
       <div id='menu-mobile'>
         
-        <div className="menuFechado">
-          <Link className='logo' onClick={`menu ${controlar == false}`} to={"/"}> <img src={Logo} alt="" /> </Link>
+        <div className={`menuFechado ${controlar ? 'menuAberto' : ''}`}>
+          <Link className='logo' onClick={`menu ${controlar == false}`} to={"/"}> <img src={controlar ? LogoBranco : Logo} alt="" /> </Link>
           <button onClick={handleMostrarMenu}>{controlar == true ? <PiX size={21} /> : <PiList size={21} />}</button>
         </div>
 
