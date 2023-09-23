@@ -1,6 +1,8 @@
 @import '/src/variaveis';
 
 .homeConteudo {
+    overflow-y: hidden;
+    position: relative;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -39,6 +41,15 @@
     margin-top: 5rem;
 }
 
-#tituloVideo {
-    font-size: 0.625rem;
+.videoContainer {
+    #tituloVideo {
+        font-size: 0.625rem;
+        margin-top: 6.59rem;
+        margin-bottom: 2.12rem;
+    }
+
+    img {
+        margin-bottom: 7.38rem;
+    }
 }
+
