@@ -11,6 +11,7 @@ export function Home() {
             <div className='ctHome'>
                 <p id='textoPrincipal'>Com a WeightPlanner, a balança da atualidade, sua vida se torna muito mais fácil. Com a possibilidade de conectar suas pesagens direto ao Excel, é possível organizar sua vida com um clique!</p>
                 <div className="dbalanca"> <img src={Dbalanca} alt="" /> </div>
+                <h2 id='tituloVideo'>BALANÇA COM ARDUINO LEONARDO – IMPRIMINDO VALORES DIRETO NO EXCEL!</h2>
             </div>
         </div>
     )
