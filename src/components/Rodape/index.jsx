@@ -6,7 +6,7 @@ function Rodape() {
 
     return (
         <>
-            <footer>
+            <footer className='rodape'>
                 <h3 id='tituloRodape' >Desenvolvedoras</h3>
                 <div id="linhaRodape"></div>
                 <div className="caixaInstagram">

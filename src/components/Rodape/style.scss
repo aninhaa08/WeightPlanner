@@ -1,9 +1,12 @@
 @import '/src/variaveis';
 
-footer {
-    background: rgba(30, 8, 33, 0.67);
-    position: fixed;
-    width: 100vw;
+.rodape {
+    background: rgba(30, 8, 33);
+    position: relative;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    z-index: 1;
 }
 
 #tituloRodape {
@@ -12,5 +15,4 @@ footer {
     text-transform: uppercase;
     margin-top: 1.56rem;
     margin-left: 1.56rem;
-    position: fixed;
 }
