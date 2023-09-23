@@ -2,11 +2,12 @@
 
 .menuFechado {
     height: 2.4rem;
-    padding-inline: 2rem;
+    padding-inline: 0.7rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    transition: background 1s ease;
 
     background: $light-grayish;
 
@@ -18,7 +19,20 @@
     button {
         border: 0;
         background: none;
+        color: $black;
     }
+}
+
+.menuAberto {
+    background: $linear-bg-menu;
+    transition: background 1s ease;
+
+    button {
+        border: 0;
+        background: none;
+        color: $white;
+    }
+
 }
 
 .menu {
@@ -56,6 +70,7 @@
 
 .menu.close {
     translate: -100%;
+    transition:  1s;
 }
 
 #menu-desktop {
@@ -70,13 +85,27 @@
     #menu-desktop {
         display: flex;
         background: $light-grayish;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         height: 2.5rem;
+        padding-inline: 1rem;
 
         a {
+            padding-inline: 0;
             text-decoration: none;
             color: $black;
+            font-size: 12px;
+        }
+
+        img {
+            width: 12rem;
+            height: 1.8rem;
+        }
+
+        button {
+            border: none;
+            background: none;
+            cursor: pointer;
         }
     }
 }

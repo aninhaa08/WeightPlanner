@@ -1,18 +1,23 @@
 @import '/src/variaveis';
 
 .homeConteudo {
-    width: 100%;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 #tituloHome {
-    font-size: 15px;
+    font-size: 1.875rem;
     margin: 3.44rem 0 0;
-    text-transform: uppercase;
+}
+
+#subtituloHome {
+    font-weight: 400;
+    font-size: 0.9375rem;
+    color: $purple-pink;
+    margin-block: 0.30rem;
 }
 
 #linha {
@@ -23,19 +28,13 @@
 
 .ctHome {
     margin-top: 1.81rem;
-    margin-inline: auto;
-    width: 80%;
+    padding-inline: 26px;
 }
 
 #textoPrincipal {
-    text-align: center;
-    font-size: 0.625rem;
+    font-size: 14px;
 }
 
 .dbalanca {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     margin-top: 5rem;
 }
