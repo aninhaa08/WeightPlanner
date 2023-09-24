@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Menu />
         <Router />
-        <Rodape />
+        {/* <Rodape /> */}
       </BrowserRouter>
     </>
   )

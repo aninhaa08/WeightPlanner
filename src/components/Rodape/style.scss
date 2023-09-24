@@ -1,12 +1,20 @@
 @import '/src/variaveis';
 
+footer {
+    height: 13.3rem;
+    width: 100%;
+}
+
 .rodape {
     background: rgba(30, 8, 33);
     position: relative;
     bottom: 0;
+    // left: 0;
+    // right: 0;
     display: flex;
-    width: 100%;
+    
     z-index: 1;
+    
 }
 
 #tituloRodape {

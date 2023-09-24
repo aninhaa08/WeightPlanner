@@ -2,6 +2,7 @@ import './style.scss'
 // import { Link } from 'react-router-dom'
 import Dbalanca from '../../assets/balanca3d.svg'
 import ImgVideo from '../../assets/video.png'
+import Rodape from '../../components/Rodape'
 
 
 export function Home() {
@@ -18,6 +19,7 @@ export function Home() {
                     <img src={ImgVideo} alt="" />
                 </div>
             </div>
+            <Rodape />
         </body>
     )
 }
