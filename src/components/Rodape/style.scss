@@ -36,6 +36,7 @@
 
 .perfisInstagram {
     flex-direction: column;
+    padding-bottom: 1rem;
 
     .caixaInstagram {
         
@@ -75,18 +76,26 @@
     transform: rotate(90deg);
     align-items: center;
     justify-content: center;
+    display: flex;
+    margin-top: 6.5rem;
+
 }
 
 .caixaDireitos {
     flex-direction: column;
     margin-right: 0.62rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     img {
-        width: 9rem;
-        height: 2rem;
+        width: 9.5rem;
+        height: 2.5rem;
+        margin-right: 0.5rem;
     }
 
     #direitos {
-        font-size: 0.43rem;
+        font-size: 0.60rem;
+        margin-left: 0.3rem;
     }
 }
