@@ -7,6 +7,7 @@ function Login() {
             <form action="">
                 <input type="email" placeholder="Email" />
                 <input type="password" placeholder="Senha" />
+                <p>OIIIIIIIII</p>
             </form>
             <button id="botaoLogin">Logar</button>
             <div className="caixaSemConta">
