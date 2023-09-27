@@ -1,0 +1,40 @@
+@import '/src/variaveis';
+
+#tituloObjetivo {
+    background: rgba(57, 14, 77, 0.46);
+    padding: 0.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.caixa_ct1 {
+    background:  rgba(192, 201, 218, 0.42);
+    border: 1.3px solid #852BCB;
+    backdrop-filter: blur(5px);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1.25rem;
+    margin: 2.5rem 1.8rem 4.5rem;
+}
+
+.caixa_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+        img {
+            width: 14.5625rem;
+            height: 14.25rem;
+    }
+}
+
+.caixa_ct2 {
+    background:  rgba(192, 201, 218, 0.42);
+    border: 1.3px solid #852BCB;
+    backdrop-filter: blur(5px);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1.25rem;
+    margin: 2.5rem 1.8rem 4.5rem;
+}
