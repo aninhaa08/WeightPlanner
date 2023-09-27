@@ -1,11 +1,13 @@
 @import '/src/variaveis';
 
 .homeConteudo {
-    height: 100vh;
+    overflow: visible;
+    // position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    z-index: 0;
 }
 
 #tituloHome {
@@ -38,3 +40,16 @@
 .dbalanca {
     margin-top: 5rem;
 }
+
+.videoContainer {
+    #tituloVideo {
+        font-size: 0.625rem;
+        margin-top: 6.59rem;
+        margin-bottom: 2.12rem;
+    }
+
+    img {
+        margin-bottom: 7.38rem;
+    }
+}
+

@@ -50,14 +50,14 @@ function Menu() {
       </div>
 
       <div id="menu-desktop">
-      <Link className='logo' to={"/"}> <img src={LogoWeb} alt="" /> </Link>
-        <nav>
-            <Link to={"/objetivo"}> Objetivo </Link>
-            <Link to={"/publico"}> Público Alvo </Link>
-            <Link to={"/componentes"}> Componentes </Link>
-            <Link to={"/bibliografia"}> Bibliografia </Link>
-        </nav>
-      <button className='usuario'> <PiUserCircle size={21} /> </button>
+        <Link className='logo' to={"/"}> <img src={LogoWeb} alt="" /> </Link>
+          <nav>
+              <Link to={"/objetivo"}> Objetivo </Link>
+              <Link to={"/publico"}> Público Alvo </Link>
+              <Link to={"/componentes"}> Componentes </Link>
+              <Link to={"/bibliografia"}> Bibliografia </Link>
+          </nav>
+        <Link to={"/login"}> <PiUserCircle size={21} /> </Link>
       </div>
     </header>
   )
