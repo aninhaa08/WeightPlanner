@@ -7,7 +7,7 @@ import Rodape from '../../components/Rodape'
 
 export function Home() {
     return (
-        <body className='homeConteudo'>
+        <div className='homeConteudo'>
             <h1 id='tituloHome'>WeightPlanner</h1>
             <h2 id='subtituloHome'>Pesar nunca foi tão fácil</h2>
             <div id='linha'> </div>
@@ -20,6 +20,6 @@ export function Home() {
                 </div>
             </div>
             <Rodape />
-        </body>
+        </div>
     )
 }

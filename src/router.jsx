@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import { Home } from './pages/HomePage'
 import { Login } from './pages/Login'
-import { Cadastro } from './pages/Cadastro'
+import { Cadastro }  from './pages/Cadastro'
 import { Objetivo } from './pages/Objetivo'
 import { PublicoAlvo } from './pages/PublicoAlvo'
 import { Componentes } from './pages/Componentes'
