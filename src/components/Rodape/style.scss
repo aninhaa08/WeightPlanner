@@ -2,12 +2,9 @@
 
 .rodape {
     background: rgba(30, 8, 33);
-    position: relative;
-    bottom: 0;
     display: flex;
-    width: 100%;
-    
-    z-index: 1;
+    justify-content: center;
+    width: 100vw;
 }
 
 .ladoDireitoRodape {
@@ -70,15 +67,14 @@
 }
 
 #divisorRodape {
-    background: $white;
-    width: 10.2rem;
-    height: 0.1rem;
-    transform: rotate(90deg);
+    width: 0.08rem;
+    height: 11rem;
+    background: #fff;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
-    margin-top: 6.5rem;
-
+    margin-top: 1.95rem;
+    margin-left: 0.4rem;
 }
 
 .caixaDireitos {

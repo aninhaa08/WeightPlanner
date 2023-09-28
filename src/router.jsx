@@ -5,6 +5,7 @@ import { Objetivo } from './pages/Objetivo'
 import { PublicoAlvo } from './pages/PublicoAlvo'
 import { Componentes } from './pages/Componentes'
 import { Bibliografia } from './pages/Bibliografia'
+import { Compra } from './pages/Compra'
 
 
 function Router() {
@@ -17,6 +18,7 @@ function Router() {
             <Route path="/publico" element={<PublicoAlvo />}/>
             <Route path="/componentes" element={<Componentes />} />
             <Route path="/bibliografia" element={<Bibliografia/>}/>
+            <Route path="/compra" element={<Compra/>}/>
         </Routes>
     )
 }
