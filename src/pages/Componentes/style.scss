@@ -1,5 +1,42 @@
 @import '/src/variaveis';
 
+
 #tituloComponentes {
-    color: $white;
+    background: rgba($violet, 0.46);
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.caixaCarrossel {
+    width: 18.8rem;
+    height: 9.3rem;
+    background: rgba($black, 0.49);
+    border: 1px solid #4B2155;
+    border-radius: 1.25rem;
+    margin: 4.44rem auto 2.5rem;
+}
+
+.slider1, .slider2, .slider3, .slider4, .slider5, .slider6 {
+    display: none;
+}
+
+
+.caixaElementos {
+    align-items: center;
+}
+
+.componentesContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 2rem;
+
+    margin-inline: 3rem;
+
+    #img1, #img2, #img3, #img4, #img5, #img6 {
+        width: 9rem;
+        height: 7.5rem;
+    }
 }

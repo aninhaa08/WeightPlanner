@@ -5,6 +5,12 @@ import modulo from '../../assets/modConv_img.png'
 import botao from '../../assets/botao.png'
 import balanca from '../../assets/balanca_img.png'
 import jumper from '../../assets/jumpers.png'
+import img1 from '../../assets/img1Container.png'
+import img2 from '../../assets/img2Container.png'
+import img3 from '../../assets/img3Container.png'
+import img4 from '../../assets/img4Container.png'
+import img5 from '../../assets/img5Container.png'
+import img6 from '../../assets/img6Container.png'
 
 export function Componentes() {
     return (
@@ -42,9 +48,16 @@ export function Componentes() {
                     <p id="textoSlider6">Jumpers</p>
                     <p id="precoSlider6">R$20</p>
                 </div>
-            </div>
-            <div className="componentesContainer">
-                
+            </div> 
+            <div className="caixaElementos">
+                <div className="componentesContainer">
+                    <img src={img1} alt="" id="img1" />
+                    <img src={img2} alt="" id="img2" />
+                    <img src={img3} alt="" id="img3" />
+                    <img src={img4} alt="" id="img4" />
+                    <img src={img5} alt="" id="img5" />
+                    <img src={img6} alt="" id="img6" />
+                </div>
             </div>
         </div>
     )
