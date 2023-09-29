@@ -5,7 +5,7 @@ export function Objetivo () {
     return (
         <div className='ObjetivoConteudo'>
             <h1 id='tituloObjetivo'>Nosso Objetivo</h1>
-            <div className="content">
+            <div className="contentObjetivo">
             <div id='principal'>
                 <div className='caixa_ct1'>
                     <p>Temos como objetivo facilitar a organização de pesagens em grande ou pequena escala.</p>
