@@ -1,26 +1,92 @@
 @import '/src/variaveis';
 
-footer {
-    height: 13.3rem;
-    width: 100%;
-}
-
 .rodape {
     background: rgba(30, 8, 33);
     position: relative;
     bottom: 0;
-    // left: 0;
-    // right: 0;
     display: flex;
+    width: 100%;
     
     z-index: 1;
-    
 }
 
-#tituloRodape {
-    font-weight: 400;
-    font-size: 0.6875rem;
-    text-transform: uppercase;
-    margin-top: 1.56rem;
-    margin-left: 1.56rem;
+.ladoDireitoRodape {
+    flex-direction: column;
+}
+
+.caixaTitulo {
+    flex-direction: column;
+
+    #tituloRodape {
+        font-weight: 400;
+        font-size: 0.68rem;
+        text-transform: uppercase;
+        text-align: start;
+        margin: 1.56rem 1.63rem 0.44rem 1.20rem;
+    }
+    
+    #linhaRodape {
+        background: linear-gradient(90deg, #FFF 0%, #7D5F95 74.41%);
+        width: 9.81rem;
+        height: 0.16rem;
+        margin-left: 1.20rem;
+    }
+
+}
+
+.perfisInstagram {
+    flex-direction: column;
+
+    .caixaInstagram {
+        
+
+        .caixaUser {
+            display: flex;
+            flex-direction: row;
+            margin-left: 1.20rem;
+        }
+
+        .nomeInstagram {
+            font-size: 0.625rem;
+            text-align: start;
+            margin: 1.19rem 0.41rem 0.25rem 1.20rem;
+        }
+
+        .linkInstagram {
+            border-radius: 0.31rem;
+            background: $grayish-violet;
+            border: none;
+            width: 6.62rem;
+            height: 1.06rem;
+            text-align: start;
+            padding-left: 0.5rem;
+            color: $white;
+            font-size: 0.46rem;
+            margin-left: 0.5rem;
+            margin-top: 0.05rem;
+        }
+    }
+}
+
+#divisorRodape {
+    background: $white;
+    width: 10.2rem;
+    height: 0.1rem;
+    transform: rotate(90deg);
+    align-items: center;
+    justify-content: center;
+}
+
+.caixaDireitos {
+    flex-direction: column;
+    margin-right: 0.62rem;
+
+    img {
+        width: 9rem;
+        height: 2rem;
+    }
+
+    #direitos {
+        font-size: 0.43rem;
+    }
 }
