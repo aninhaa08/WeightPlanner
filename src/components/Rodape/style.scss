@@ -1,26 +1,145 @@
 @import '/src/variaveis';
 
-footer {
-    height: 13.3rem;
-    width: 100%;
-}
-
 .rodape {
     background: rgba(30, 8, 33);
-    position: relative;
-    bottom: 0;
-    // left: 0;
-    // right: 0;
     display: flex;
-    
-    z-index: 1;
-    
+    justify-content: center;
+    width: 100vw;
 }
 
-#tituloRodape {
-    font-weight: 400;
-    font-size: 0.6875rem;
-    text-transform: uppercase;
-    margin-top: 1.56rem;
-    margin-left: 1.56rem;
+.ladoDireitoRodape {
+    flex-direction: column;
+}
+
+.caixaTitulo {
+    flex-direction: column;
+
+    #tituloRodape {
+        font-weight: 400;
+        font-size: 0.68rem;
+        text-transform: uppercase;
+        text-align: start;
+        margin: 1.56rem 1.63rem 0.44rem 1.20rem;
+        
+        @media(min-width: 1100px) {
+            font-size: 1.6rem;
+        }
+    }
+    
+    #linhaRodape {
+        background: linear-gradient(90deg, #FFF 0%, #7D5F95 74.41%);
+        width: 9.81rem;
+        height: 0.08rem;
+        margin-left: 1.20rem;
+
+        @media(min-width: 1100px) {
+            width: 21rem;
+            height: 0.20rem;
+        }
+    }
+
+}
+
+.perfisInstagram {
+    flex-direction: column;
+    padding-bottom: 1rem;
+
+    .caixaInstagram {
+        
+
+        .caixaUser {
+            display: flex;
+            flex-direction: row;
+            margin-left: 1.20rem;
+        }
+
+        .nomeInstagram {
+            font-size: 0.6rem;
+            text-align: start;
+            margin: 1.19rem 0.41rem 0.25rem 1.20rem;
+
+            @media(min-width: 1100px) {
+                font-size: 1.2rem;
+            }
+        }
+
+        .linkInstagram {
+            border-radius: 0.31rem;
+            background: $grayish-violet;
+            border: none;
+            width: 6.62rem;
+            height: 1.06rem;
+            text-align: start;
+            padding-left: 0.5rem;
+            color: $white;
+            font-size: 0.46rem;
+            margin-left: 0.5rem;
+            margin-top: 0.05rem;
+
+            @media(min-width: 1100px) {
+                font-size: 1rem;
+                width: 12rem;
+                height: 1.8rem;
+            }
+        }
+    }
+}
+
+.icone_insta {
+    width: 1rem;
+    height: 1.2rem;
+
+    @media(min-width: 1100px) {
+        width: 1.5rem;
+        height: 1.8rem;
+    }
+}
+
+#divisorRodape {
+    width: 0.08rem;
+    height: 11rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.95rem;
+    margin-left: 0.4rem;
+
+    @media(min-width: 1100px) {
+        width: 0.1rem;
+        height: 16rem;
+    }
+}
+
+.caixaDireitos {
+    flex-direction: column;
+    margin-right: 0.62rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 9.5rem;
+        height: 2.5rem;
+        margin-right: 0.5rem;
+
+        @media(min-width: 1100px) {
+            width: 20rem;
+            height: 5rem;
+            margin: 0;
+        }
+    }
+
+    #direitos {
+        font-size: 0.60rem;
+        margin-left: 0.3rem;
+
+        @media(min-width: 1100px) {
+            font-size: 1rem;
+        }
+    }
+
+    @media(min-width: 1100px) {
+        
+    }
 }
