@@ -1,0 +1,96 @@
+@import '/src/variaveis';
+
+.loginConteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#tituloLogin {
+    margin: 5.88rem 0 1rem;
+    text-align: center;
+    width: 14rem;
+}
+
+#linhaLogin {
+    border: 1px solid $white;
+    width: 15.6rem;
+}
+
+.caixaLogin {
+    margin: 3.3rem 0 2.8rem;
+    
+    
+    #subtituloLogin {
+        text-align: left;
+        margin-bottom: 1.75rem;
+        font-size: 1rem;
+    }
+    
+    #formLogin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .input1 {
+            padding-left: 0.5rem;
+            
+
+            .inputForm {
+                width: 16.8rem;
+                height: 2.5rem;
+
+                background: $light-gray;
+                border: none;
+                color: #646464;
+                position: relative;
+            }
+
+        }
+
+        .input2 {
+            padding-left: 0.5rem;
+            
+
+            .inputForm {
+                width: 16.8rem;
+                height: 2.5rem;
+
+                background: $light-gray;
+                border: none;
+                color: #646464;
+                position: relative;
+            }
+
+        }
+
+        input:focus {
+            outline: 2px solid #646464;
+        }
+
+        #email {
+            margin-bottom: 1.75rem;
+        }
+
+        .detalheInput1 {
+            width: 0.625rem;
+            height: 2.5rem;
+            background: $grayish-violet;
+        }
+
+        .detalheInput2 {
+            width: 0.625rem;
+            height: 2.5rem;
+            background: $grayish-violet;
+            position: absolute;
+        }
+    }
+
+}
+
+#botaoLogin {
+    background: $light-gray;
+    font-size: 1rem;
+}
