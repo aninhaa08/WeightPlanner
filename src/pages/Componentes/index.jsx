@@ -14,6 +14,7 @@ import img3 from '../../assets/img3Container.png'
 import img4 from '../../assets/img4Container.png'
 import img5 from '../../assets/img5Container.png'
 import img6 from '../../assets/img6Container.png'
+import Rodape from '../../components/Rodape'
 
 
 export function Componentes() {
@@ -76,6 +77,7 @@ export function Componentes() {
                     <img src={img6} alt="" id="img6" />
                 </div>
             </div>
+            <Rodape />
         </div>
     )
 }
