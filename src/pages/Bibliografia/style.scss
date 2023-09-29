@@ -1,0 +1,48 @@
+@import '/src/variaveis';
+
+#tituloRefe {
+    background: rgba($violet, 0.46);
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.ct_caixa1 {
+    background:  rgba(192, 201, 218, 0.42);
+    border: 1.3px solid #852BCB;
+    backdrop-filter: blur(5px);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1.25rem;
+    margin: 2.5rem 1.8rem 2.5rem;
+    font-size: 0.9rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    img {
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+.mao_robo {
+    img {
+        width: 23.49rem;
+        height: 14.9375rem;
+    }
+}
+
+.refe_subtitulo {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
