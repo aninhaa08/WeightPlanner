@@ -16,8 +16,7 @@ import img5 from '../../assets/img5Container.png'
 import img6 from '../../assets/img6Container.png'
 import Rodape from '../../components/Rodape'
 
-
-export function Componentes() {
+export function Componentes () {
     return (
         <div className='componentesConteudo'>
             <h1 id='tituloComponentes'>Componentes e valores</h1>
