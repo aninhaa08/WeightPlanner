@@ -15,7 +15,7 @@ function Rodape() {
                     <div className="caixaInstagram">
                         <p className="nomeInstagram">Maria Eduarda Loreta</p>
                         <div className="caixaUser">
-                            <PiInstagramLogo size={18} />
+                            <PiInstagramLogo className='icone_insta' size={18} />
                             <button className='linkInstagram'>@_dudaloreta</button>
                         </div>
                         
@@ -23,7 +23,7 @@ function Rodape() {
                     <div className="caixaInstagram">
                         <p className="nomeInstagram">Ana Carolina Souto</p>
                         <div className="caixaUser">
-                            <PiInstagramLogo size={18} />
+                            <PiInstagramLogo className='icone_insta'size={18} />
                             <button className='linkInstagram'>@carol_sm8</button>
                         </div>
                         
@@ -31,7 +31,7 @@ function Rodape() {
                     <div className="caixaInstagram">
                         <p className="nomeInstagram">Beatriz Novais</p>
                         <div className="caixaUser">
-                            <PiInstagramLogo size={18} />
+                            <PiInstagramLogo className='icone_insta' size={18} />
                             <button className='linkInstagram'>@vieira_bia1404</button>
                         </div>
                         
