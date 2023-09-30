@@ -17,10 +17,12 @@ function Menu() {
   function handleMostrarMenu() {
     if(controlar) {
       setControlar(false)
+      document.documentElement.style.overflow = 'auto'
       return
     }
 
     setControlar(true)
+    document.documentElement.style.overflow = 'hidden'
   }
 
   return (
