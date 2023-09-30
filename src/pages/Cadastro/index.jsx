@@ -1,10 +1,8 @@
 import './style.scss'
-import logoWebBranco from '../../assets/logoWebBranco'
+import logoWebBranco from '../../assets/logoWebBranco.png'
 
 export function Cadastro () {
     const [criar, setCriar] =  useState()
-
-
 
     return (
         <div>

@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import { Home } from './pages/HomePage'
 import { Login } from './pages/Login'
+import { Cadastro } from './pages/Cadastro'
 import { Objetivo } from './pages/Objetivo'
 import { PublicoAlvo } from './pages/PublicoAlvo'
 import { Componentes } from './pages/Componentes'
@@ -14,6 +15,7 @@ function Router() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />}/>
+            <Route path="/cadastro" element={<Cadastro />}/>
             <Route path="/objetivo" element={<Objetivo />}/>
             <Route path="/publico" element={<PublicoAlvo />}/>
             <Route path="/componentes" element={<Componentes />} />
