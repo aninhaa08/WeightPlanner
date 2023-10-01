@@ -1,10 +1,13 @@
 @import '/src/variaveis';
 
-.loginConteudo {
+.loginMobile {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
+    @media (min-width: 1024px) {
+        display: none;
+    }
 }
 
 #tituloLogin {
@@ -19,12 +22,12 @@
 }
 
 .caixaLogin {
-    margin: 3.3rem 0 2.8rem;
+    margin: 3.3rem 0 3.5rem;
     
     
     #subtituloLogin {
         text-align: left;
-        margin-bottom: 1.75rem;
+        margin-bottom: 1.31rem;
         font-size: 1rem;
     }
     
@@ -33,10 +36,19 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 1.2rem;
 
         .input {
-            padding-left: 0.5rem;
             position: relative;
+
+            div {
+                width: 0.675rem;
+                height: 100%;
+                background: $grayish-violet;
+                position: absolute;
+                z-index: 1;
+                top: 0;
+            }
             
             input {
                 width: 16.8rem;
@@ -47,33 +59,13 @@
                 background: $light-gray;
                 border: none;
                 color: #646464;
-                position: relative;
+                padding-left: 1rem;
             }
 
         }
 
         input:focus {
             outline: 2px solid #646464;
-        }
-
-        #email {
-            margin-bottom: 1.75rem;
-        }
-
-        .detalheInput1 {
-            width: 0.625rem;
-            height: 100%;
-            background: $grayish-violet;
-            position: absolute;
-            z-index: 1;
-        }
-
-        .detalheInput2 {
-            width: 0.625rem;
-            height: 100%;
-            background: $grayish-violet;
-            position: absolute;
-            z-index: 1;
         }
     }
 
@@ -82,4 +74,59 @@
 #botaoLogin {
     background: $light-gray;
     font-size: 1rem;
+    width: 11.25rem;
+    height: 2rem;
+    border-radius: 13.75rem;
+    border: none;
+    letter-spacing: -0.063rem;
+}
+
+#botaoLogin:hover {
+    background: $violet;
+    color: $white;
+    box-shadow: 0 0px 50px 0px rgba($white, 0.3);
+    border: 1px solid $grayish-violet;
+}
+
+.caixaSemConta {
+    font-size: 0.875rem;
+    text-align: center;
+    margin-top: 2.06rem;
+    line-height: 1.2rem;
+
+    a {
+        color: $white;
+    }
+}
+
+.loginWeb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.caixaMaior {
+    display: flex;
+    align-items: center;
+    width: 77.8rem;
+    height: 30.9rem;
+    background: rgba(57, 14, 77, 0.46);
+    border-radius: 1.25rem;
+}
+
+.caixaMenor {
+    width: 39.3rem;
+    height: 30.9rem;
+    background: rgba(57, 14, 77, 0.46);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid $white;
+    border-radius: 1.25rem;
 }
