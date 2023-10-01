@@ -3,11 +3,13 @@ import './style.scss'
 import Dbalanca from '../../assets/balanca3d.svg'
 import ImgVideo from '../../assets/video.png'
 import Rodape from '../../components/Rodape'
+import imagemCard1 from '../../assets/imagemCardFrente.svg'
+import logo from '../../assets/logoWebBranco.png'
 
 
 export function Home() {
     return (
-        <body className='homeConteudo'>
+        <div className='homeConteudo'>
             <h1 id='tituloHome'>WeightPlanner</h1>
             <h2 id='subtituloHome'>Pesar nunca foi tão fácil</h2>
             <div id='linha'> </div>
@@ -19,7 +21,30 @@ export function Home() {
                     <img src={ImgVideo} alt="" />
                 </div>
             </div>
+            <div className="caixaCompra">
+                <div className="compraWeb">
+                    <div className="flip-card">
+                        <div className="flip-card-conteudo">
+                            <div className="flip-card-frente">
+                                <p className="texto">Quer saber como passar pesos obtidos para o Excel de forma fácil?</p>
+                                <img src={imagemCard1} alt="" />
+                            </div>
+                            <div className="flip-card-atras">
+                                <img src={logo} alt="" />
+                                <p className="texto">Então a WeightPlanner é perfeita para você!</p>
+                                <button id="botaoCard">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="compraMobile">
+                    <div id="caixaCompraM">
+                        <p id="textoCompraM">Se interessou pela balança WeightPlanner?</p>
+                        <button id="botaoCompraM">Compre aqui</button>
+                    </div>
+                </div>
+            </div>
             <Rodape />
-        </body>
+        </div>
     )
 }

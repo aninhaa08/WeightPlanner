@@ -2,7 +2,6 @@
 
 .homeConteudo {
     overflow: visible;
-    // position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -38,18 +37,160 @@
 }
 
 .dbalanca {
-    margin-top: 5rem;
+    margin-top: 6rem;
 }
 
 .videoContainer {
     #tituloVideo {
-        font-size: 0.625rem;
-        margin-top: 6.59rem;
+        font-size: 0.725rem;
+        margin-top: 6.39rem;
         margin-bottom: 2.12rem;
+        font-weight: 600;
     }
 
     img {
-        margin-bottom: 7.38rem;
+        width: 18rem;
+        height: 10rem;
     }
 }
 
+.compraWeb {
+    display: flex;
+    justify-content: center;
+
+    .flip-card {
+        width: 15.5rem;
+        height: 19.4rem;
+        perspective: 1000px;
+        font-family: sans-serif;
+        margin: 8rem 0 5rem;
+        font-weight: 400;
+    
+        .flip-card-conteudo {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+    
+            .flip-card-frente {
+                background: rgba($white, 0.30);
+                color: $white;
+                align-items: center;
+    
+                img {
+                    height: 12.5rem;
+                }
+    
+                .texto {
+                    margin-top: 2rem;
+                    width: 13rem;
+                    font-size: 0.906rem;
+                }
+            }
+              
+            .flip-card-atras {
+                background: $grayish-violet;
+                color: $dark-violet;
+                transform: rotateY(180deg);
+                align-items: center;
+                
+                .texto {
+                    width: 11.5rem;
+                    font-size: 1.2rem;
+                    position: absolute;
+                    top: 0;
+                    margin-top: 5rem;
+                }
+
+                img {
+                    width: 12rem;
+                    top: 0;
+                    position: absolute;
+                }
+
+                #botaoCard {
+                    margin-top: 10rem;
+                    width: 10rem;
+                    height: 3rem;
+                    border-radius: 4.2rem;
+                    border: 1px solid $dark-magenta;
+                    color: $dark-magenta;
+                    background: $light-grayish;
+                    font-weight: 600;
+                    letter-spacing: -0.125rem;
+                    font-size: 0.925rem;
+                }
+            }
+        }
+    }
+
+    .flip-card:hover #botaoCard:hover {
+        cursor: pointer;
+        background: $dark-magenta;
+        color: $white;
+        font-weight: 400;
+    }
+    
+    .flip-card:hover .flip-card-conteudo {
+        transform: rotateY(180deg);
+    }
+      
+    .flip-card-frente, .flip-card-atras {
+        box-shadow: 0 0px 50px 0px rgba($white, 0.2);
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border: 1px solid $violet;
+        border-radius: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+  
+.compraMobile {
+    margin-bottom: 7rem;
+
+    #textoCompraM {
+        font-size: 1rem;
+        margin: 7rem 0 0 1rem;
+        margin-bottom: 2.12rem;
+        text-transform: uppercase;
+        text-align: left;
+        font-weight: 600;
+        letter-spacing: -1px;
+    }
+
+    #botaoCompraM {
+        margin-top: 2rem;
+        width: 10rem;
+        height: 3rem;
+        border-radius: 4.2rem;
+        border: 1px solid $dark-magenta;
+        color: $dark-magenta;
+        background: $light-grayish;
+        font-weight: 600;
+        letter-spacing: -0.125rem;
+        font-size: 0.925rem;
+
+        #botaoCompraM:hover {
+            cursor: pointer;
+            background: $dark-magenta;
+            color: $white;
+            font-weight: 400;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        display: none;
+    }
+
+}
