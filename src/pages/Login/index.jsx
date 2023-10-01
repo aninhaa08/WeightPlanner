@@ -8,13 +8,13 @@ export function Login() {
             <div className="caixaLogin">
                 <p id="subtituloLogin">Login</p>
                 <form id="formLogin" action="">
-                    <div className="input1">
+                    <div className="input" id="input1">
                         <input className="inputForm" id="email" type="email" placeholder="Email" />
-                        {/* <div className="detalheInput1"></div> */}
+                        <div className="detalheInput1"></div>
                     </div>
-                    <div className="input2">
+                    <div className="input" id="input2">
                         <input className="inputForm" id="senha" type="password" placeholder="Senha" />
-                        {/* <div className="detalheInput2"></div> */}
+                        <div className="detalheInput2"></div>
                     </div>
                 </form>
             </div>

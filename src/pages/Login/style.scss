@@ -34,30 +34,16 @@
         align-items: center;
         justify-content: center;
 
-        .input1 {
+        .input {
             padding-left: 0.5rem;
+            position: relative;
             
-
-            .inputForm {
+            input {
                 width: 16.8rem;
                 height: 2.5rem;
-
-                background: $light-gray;
-                border: none;
-                color: #646464;
-                position: relative;
             }
 
-        }
-
-        .input2 {
-            padding-left: 0.5rem;
-            
-
             .inputForm {
-                width: 16.8rem;
-                height: 2.5rem;
-
                 background: $light-gray;
                 border: none;
                 color: #646464;
@@ -76,15 +62,18 @@
 
         .detalheInput1 {
             width: 0.625rem;
-            height: 2.5rem;
+            height: 100%;
             background: $grayish-violet;
+            position: absolute;
+            z-index: 1;
         }
 
         .detalheInput2 {
             width: 0.625rem;
-            height: 2.5rem;
+            height: 100%;
             background: $grayish-violet;
             position: absolute;
+            z-index: 1;
         }
     }
 

@@ -1,10 +1,10 @@
 import './style.scss'
-// import { Link } from 'react-router-dom'
 import Dbalanca from '../../assets/balanca3d.svg'
 import ImgVideo from '../../assets/video.png'
 import Rodape from '../../components/Rodape'
 import imagemCard1 from '../../assets/imagemCardFrente.svg'
 import logo from '../../assets/logoWebBranco.png'
+import { Link } from 'react-router-dom'
 
 
 export function Home() {
@@ -32,7 +32,9 @@ export function Home() {
                             <div className="flip-card-atras">
                                 <img src={logo} alt="" />
                                 <p className="texto">Então a WeightPlanner é perfeita para você!</p>
-                                <button id="botaoCard">Comprar</button>
+                                <Link to='/cadastro'>
+                                    <button id="botaoCard">Comprar</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -40,7 +42,9 @@ export function Home() {
                 <div className="compraMobile">
                     <div id="caixaCompraM">
                         <p id="textoCompraM">Se interessou pela balança WeightPlanner?</p>
-                        <button id="botaoCompraM">Compre aqui</button>
+                        <Link to='/cadastro'>
+                            <button id="botaoCompraM">Compre aqui</button>
+                        </Link>
                     </div>
                 </div>
             </div>
