@@ -10,11 +10,11 @@ export function Login() {
                 <div className="caixaLogin">
                     <p id="subtituloLogin">Login</p>
                     <form id="formLogin" action="">
-                        <div className="input" id="input1">
+                        <div className="input">
                             <input className="inputForm" id="email" type="email" placeholder="Email" />
                             <div></div>
                         </div>
-                        <div className="input" id="input2">
+                        <div className="input">
                             <input className="inputForm" id="senha" type="password" placeholder="Senha" />
                             <div></div>
                         </div>
@@ -40,11 +40,11 @@ export function Login() {
                     <div className="caixaLoginW">
                         <p id="subtituloLoginW">Login</p>
                         <form id="formLoginW" action="">
-                            <div className="input" id="input1">
+                            <div className="input">
                                 <input className="inputFormW" id="email" type="email" placeholder="Email" />
                                 <div></div>
                             </div>
-                            <div className="input" id="input2">
+                            <div className="input">
                                 <input className="inputFormW" id="senha" type="password" placeholder="Senha" />
                                 <div></div>
                             </div>
