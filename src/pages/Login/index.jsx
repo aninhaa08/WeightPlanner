@@ -50,6 +50,7 @@ export function Login() {
                             </div>
                         </form>
                     </div>
+                    <button id="botaoLoginW">Logar</button>
                 </div>
             </div>
         </div>
