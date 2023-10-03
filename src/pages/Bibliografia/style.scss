@@ -22,10 +22,7 @@
     overflow: hidden;
 }
 
-// .refe_caixa {
-// }
-
-.ct_caixa1 {
+.refe_caixa {
     background:  rgba(192, 201, 218, 0.42);
     border: 1.3px solid #852BCB;
     backdrop-filter: blur(5px);
@@ -50,11 +47,7 @@
     }
 }
 
-// .container_refe {
-
-// }
-
-.container {
+.container_refe {
     display: flex;
     flex-wrap: wrap;
     max-width: 300px;
@@ -66,7 +59,7 @@
         flex-wrap: nowrap;
         max-width: none;
     }
-    
+
     @media (min-width: 1100px){
         flex-wrap: nowrap;
         max-width: none;
@@ -75,9 +68,6 @@
 
 .content_refe {
     margin-bottom: 0;
-}
-
-.content {
     img {
         width: 7rem;
         height: 7rem;
@@ -104,7 +94,7 @@
         width: 21.49rem;
         height: 10.9375rem;
     }
-    
+
     @media (min-width: 850px){
         img {
             width: 50rem;
@@ -118,13 +108,7 @@
             height: 30rem;
         }
     }
-}
 
-.mao_robo {
-    img {
-        width: 23.49rem;
-        height: 14.9375rem;
-    }
 }
 
 .refe_subtitulo {
