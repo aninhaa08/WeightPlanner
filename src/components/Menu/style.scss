@@ -85,10 +85,21 @@
     #menu-desktop {
         display: flex;
         background: $light-grayish;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         height: 2.5rem;
-        padding-inline: 1rem;
+
+        .logo{
+            left: 0;
+            position: absolute;
+            margin-left: 1rem;
+        }
+
+        .linkLogin {
+            right: 0;
+            position: absolute;
+            margin-right: 1rem;
+        }
 
         a {
             padding-inline: 0;
@@ -106,6 +117,16 @@
             border: none;
             background: none;
             cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+        }
+
+        a:hover {
+            color: $grayish-violet;
         }
     }
 }

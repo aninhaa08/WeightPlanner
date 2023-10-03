@@ -59,7 +59,7 @@ function Menu() {
               <Link to={"/componentes"}> Componentes </Link>
               <Link to={"/bibliografia"}> Bibliografia </Link>
           </nav>
-        <Link to={"/login"}> <PiUserCircle size={21} /> </Link>
+        <Link className='linkLogin' to={"/login"}> <PiUserCircle size={24} /> </Link>
       </div>
     </header>
   )
