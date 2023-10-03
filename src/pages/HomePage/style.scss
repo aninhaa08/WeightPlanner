@@ -7,6 +7,33 @@
     flex-direction: column;
     text-align: center;
     z-index: 0;
+
+    @media (min-width: 1024px){
+
+        #tituloHome {
+            font-size: 3rem;
+        }
+
+        #subtituloHome {
+            font-size: 2rem;
+        }
+
+        #linha {
+            width: 46rem;
+        }
+
+        .ctHome {
+            margin-top: 2.4rem;
+        }
+
+        #textoPrincipal {
+            width: 65rem;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        
+    }
 }
 
 #tituloHome {
