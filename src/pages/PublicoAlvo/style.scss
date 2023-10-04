@@ -48,18 +48,18 @@
         margin-top: 15rem;
     }
 
-    @media (min-width: 1100px) {
+    @media (min-width: 768px) {
         display: none;  
     }
 }
 
 .Conexoes2{
 
-    @media (max-width: 1100px) {
+    @media (max-width: 768px) {
         display: none;
     }
 
-    @media (min-width: 1100px) {
+    @media (min-width: 768px) {
         
         position: absolute;
         top: 0;
@@ -67,7 +67,6 @@
         img{
             width: 10rem;
             height: 4rem;
-            // margin-top: ;
             margin-left: 20rem;
         }
     }
@@ -80,7 +79,7 @@
         display: none;
     }
 
-    @media (min-width: 1100px) {
+    @media (min-width: 768px) {
         
         display: flex;
         justify-content: right;
@@ -98,7 +97,7 @@
 }
 
 .caixaPG_Empresas {
-    @media (min-width: 1100px) {
+    @media (min-width: 768px) {
         position: absolute;
         top: 0;
         margin-top: 15.20rem;
@@ -118,7 +117,7 @@
         margin-left: 0.7rem;
     }
 
-    @media (min-width: 1100px) {
+    @media (min-width: 768px) {
 
         width: 0;
 
@@ -136,7 +135,7 @@
     margin-left: 0.4rem;
     margin-bottom: 0.5rem;
 
-    @media (min-width: 1100px) {
+    @media (min-width: 768px) {
 
         font-size: 1.2rem;
         margin-top: 0.6rem;
@@ -150,7 +149,7 @@
     margin-bottom: 1rem;
     margin-right: 12.8rem;
 
-    @media (min-width: 1100px) {
+    @media (min-width: 768px) {
 
         width: 24rem;
         font-size: 1rem;
@@ -161,7 +160,7 @@
 }
 
 .caixaUsoPessoal {
-    @media (min-width: 1100px) {
+    @media (min-width: 768px) {
         position: absolute;
         top: 0;
         right: 0;
@@ -182,7 +181,7 @@
         margin-right: 0.7rem;
     }
 
-    @media (min-width: 1100px) {
+    @media (min-width: 768px) {
 
         img{
             width: 3.5rem;
@@ -201,7 +200,7 @@
     margin-top: 0.8rem;
     
 
-    @media (min-width: 1100px) {
+    @media (min-width: 768px) {
 
         font-size: 1.2rem;
         margin-right: 4rem;
@@ -218,7 +217,7 @@
     margin-left: 12rem;
     margin-bottom: 4rem;
 
-    @media (min-width: 1100px) {
+    @media (min-width: 768px) {
 
         width: 24.9rem ;
         font-size: 1rem;

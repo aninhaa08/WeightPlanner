@@ -109,14 +109,16 @@
     height: 30.9rem;
     background: rgba(57, 14, 77, 0.46);
     border-radius: 1.25rem;
+    margin-top: 4.2rem;
 
     .caixaCadastroW {
         text-align: center;
         margin: auto;
         top: 0;
         right: 0;
-        margin-right: 18rem;
+        margin-right: 20rem;
         position: absolute;
+        margin-top: 4rem;
 
         #subtituloCadastroW {
             font-size: 2rem;
@@ -168,7 +170,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    margin: 24rem 20.5rem 0 0;
+    margin: 28rem 23rem 0 0;
 }
 
 #botaoCadastroW:hover {
@@ -194,12 +196,15 @@
         top: 0;
         width: 17rem;
         height: 4.5rem;
+        margin-top: 5rem;
+        margin-right: 1.5rem;
     }
 
     #tituloCadastroW {
         width: 25rem;
         text-align: center;
         font-size: 2rem;
+        margin-top: 3rem;
     }
 
     #linhaCadastroW {

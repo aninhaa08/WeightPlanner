@@ -1,5 +1,5 @@
 import './style.scss'
-import Dbalanca from '../../assets/balanca3d.svg'
+import Dbalanca from '../../assets/3Dbalanca.svg'
 import ImgVideo from '../../assets/video.png'
 import Rodape from '../../components/Rodape'
 import imagemCard1 from '../../assets/imagemCardFrente.svg'
