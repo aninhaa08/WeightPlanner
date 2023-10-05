@@ -1,5 +1,17 @@
 @import '/src/variaveis';
 
+.ObjetivoConteudo {
+    @media (min-width: 1200px){
+        .caixa_ct1 {
+            width: 40rem;
+        }
+
+        .caixa_ct2 {
+            width: 40rem;
+        }
+    }
+}
+
 #tituloObjetivo {
     background: rgba($violet, 0.46);
     padding: 1rem;

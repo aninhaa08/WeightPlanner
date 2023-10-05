@@ -27,12 +27,42 @@
         }
 
         #textoPrincipal {
+            width: 50rem;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            margin-inline: auto;
+        }
+
+        .dbalanca {
+            img {
+                width: 40rem;
+                height: 20rem;
+            }
+        }
+
+        .videoContainer {
+            #tituloVideo {
+                font-size: 1rem;
+                margin-bottom: 5rem;
+            }
+        
+            img {
+                width: 28rem;
+                height: 15rem;
+            }
+        }
+
+        .compraWeb {
+            margin: 5rem 0 10rem;
+        }
+    }
+
+    @media (min-width: 1440px){
+        #textoPrincipal {
             width: 65rem;
             font-size: 1.4rem;
             margin-bottom: 1rem;
         }
-
-        
     }
 }
 
