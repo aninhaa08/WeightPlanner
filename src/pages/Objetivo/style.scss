@@ -1,16 +1,16 @@
 @import '/src/variaveis';
 
-.ObjetivoConteudo {
-    @media (min-width: 1100px){
-        .caixa_ct1 {
-            width: 48rem;
-        }
+// .ObjetivoConteudo {
+//     @media (min-width: 1100px){
+//         .caixa_ct1 {
+//             width: 48rem;
+//         }
 
-        .caixa_ct2 {
-            width: 48rem;
-        }
-    }
-}
+//         .caixa_ct2 {
+//             width: 48rem;
+//         }
+//     }
+// }
 
 #tituloObjetivo {
     background: rgba($violet, 0.46);
@@ -33,6 +33,10 @@
 .contentObjetivo {
     @media (min-width: 850px){
         display: flex;
+        justify-content: space-between;
+        width: 90rem;
+        margin: auto;
+        gap: 6rem;
     }
 }
 

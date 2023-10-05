@@ -1,5 +1,10 @@
 @import '/src/variaveis';
 
+.main {
+    max-width: 1440px;
+    margin: auto;
+}
+
 #tituloPublico{
     background: rgba(57, 14, 77, 0.46);
     padding: 1rem;
@@ -15,10 +20,9 @@
 }
 
 .pubAlvo_img {
-
-        display: flex;
-        justify-content: center;
-        position: relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
 
     img{
         width: 15rem;
@@ -37,7 +41,6 @@
 }
 
 .Conexoes {
-
     margin: auto;
     display: flex;
     justify-content: center;
@@ -166,6 +169,12 @@
         right: 0;
         margin-top: 27.75rem;
     }
+    @media (min-width: 1500px) {
+        position: absolute;
+        top: 0;
+        right: 14rem;
+        margin-top: 27.75rem;
+    }
 }
 
 .Pessoal{
@@ -223,8 +232,7 @@
         font-size: 1rem;
         margin-right: 4rem;
         margin-bottom: 3rem;
-        float: right;
-
+        text-align: right;
     }
 }
 
