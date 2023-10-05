@@ -1,13 +1,13 @@
 @import '/src/variaveis';
 
 .ObjetivoConteudo {
-    @media (min-width: 1200px){
+    @media (min-width: 1100px){
         .caixa_ct1 {
-            width: 40rem;
+            width: 45rem;
         }
 
         .caixa_ct2 {
-            width: 40rem;
+            width: 45rem;
         }
     }
 }
@@ -22,6 +22,11 @@
     @media (min-width: 850px){
         padding-block: 1.5rem;
         font-size: 2rem;
+    }
+
+    @media (min-width: 1100px){
+        padding-block: 1.5rem;
+        font-size: 2.2rem;
     }
 }
 
@@ -55,6 +60,11 @@
         font-size: 1.15rem;
         margin: 0rem 2rem;
     }
+
+    @media (min-width: 1100px){
+        font-size: 1.3rem;
+        margin: 0rem 2rem;
+    }
 }
 
 .caixa_img {
@@ -86,6 +96,11 @@
         font-size: 1.15rem;
         margin: 0 2rem;
     }
+
+    @media (min-width: 850px){
+        font-size: 1.3rem;
+        margin: 0 2rem;
+    }
 }
 
 .caixa_img_mobile {
@@ -97,6 +112,17 @@
         img {
             width: 28rem;
             height: 28rem;
+        }
+    }
+
+    @media (min-width: 1100px){
+        display: flex;
+        padding-block: 1.5rem;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+        img {
+            width: 31rem;
+            height: 31rem;
         }
     }
 
