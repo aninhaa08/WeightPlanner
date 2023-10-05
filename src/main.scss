@@ -10,6 +10,9 @@
 
 body {
     background: $linear-bg;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     color: $white;
     overflow-x: hidden;
 }
