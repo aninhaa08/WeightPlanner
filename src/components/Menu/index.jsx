@@ -8,7 +8,7 @@ import {
 import { useState } from 'react'
 import Logo from '../../assets/logoMobile.png'
 import LogoBranco from '../../assets/logoMobileBranco.png'
-import LogoWeb from '../../assets/LogoWebPreto.png'
+import LogoWeb from '../../assets/LogoWebBranco.png'
 
 
 function Menu() {
@@ -54,10 +54,10 @@ function Menu() {
       <div id="menu-desktop">
         <Link className='logo' to={"/"}> <img src={LogoWeb} alt="" /> </Link>
           <nav>
-              <Link to={"/objetivo"}> Objetivo </Link>
-              <Link to={"/publico"}> Público Alvo </Link>
-              <Link to={"/componentes"}> Componentes </Link>
-              <Link to={"/bibliografia"}> Bibliografia </Link>
+              <Link className='linksHover' to={"/objetivo"}> Objetivo </Link>
+              <Link className='linksHover' to={"/publico"}> Público Alvo </Link>
+              <Link className='linksHover' to={"/componentes"}> Componentes </Link>
+              <Link className='linksHover' to={"/bibliografia"}> Bibliografia </Link>
           </nav>
         <Link className='linkLogin' to={"/login"}> <PiUserCircle size={24} /> </Link>
       </div>

@@ -84,15 +84,21 @@
 
     #menu-desktop {
         display: flex;
-        background: $light-grayish;
+        // background: $light-grayish;
+        background: #000000;
         justify-content: center;
         align-items: center;
         height: 2.5rem;
+        padding-top: 2.5rem;
 
         .logo{
             left: 0;
             position: absolute;
             margin-left: 1rem;
+            img {
+                width: 15rem;
+                height: 4rem;;
+            }
         }
 
         .linkLogin {
@@ -104,8 +110,8 @@
         a {
             padding-inline: 0;
             text-decoration: none;
-            color: $black;
-            font-size: 12px;
+            color: $light-grayish;
+            font-size: 1rem;
         }
 
         img {
@@ -125,8 +131,9 @@
             gap: 1rem;
         }
 
-        a:hover {
+        .linksHover:hover {
             color: $grayish-violet;
+            transform: scale(1.1);
         }
     }
 }
