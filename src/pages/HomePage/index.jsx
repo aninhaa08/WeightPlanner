@@ -4,12 +4,24 @@ import ImgVideo from '../../assets/video.png'
 import Rodape from '../../components/Rodape'
 import imagemCard1 from '../../assets/imagemCardFrente.svg'
 import logo from '../../assets/logoWebBranco.png'
+import imgSlide from '../../assets/imgSlide.svg'
 import { Link } from 'react-router-dom'
 
 
 export function Home() {
     return (
         <div className='homeConteudo'>
+            <div className="slide">
+                <div className="contentSlide">
+                    <h1 id='slidetituloHome'>WeightPlanner</h1>
+                    <h2 id='slidesubtituloHome'>Pesar nunca foi tão fácil</h2>
+                    <div id='linha_slide'> </div>
+                    <p className="textoPrincipal_slide">Com a WeightPlanner, a balança da atualidade, sua vida se torna muito mais fácil. Com a possibilidade de conectar suas pesagens direto ao Excel, é possível organizar sua vida com um clique!</p>
+                </div>
+                <div className="imgslide">
+                    <img src={imgSlide} alt="" />
+                </div>
+            </div>
             <h1 id='tituloHome'>WeightPlanner</h1>
             <h2 id='subtituloHome'>Pesar nunca foi tão fácil</h2>
             <div id='linha'> </div>

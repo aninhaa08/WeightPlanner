@@ -66,6 +66,28 @@
     }
 }
 
+.slide {
+    display:none;
+    
+    @media (min-width: 850px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.contentSlide {
+    
+    @media (min-width: 850px){
+        margin-left: 3rem;
+    }
+    
+}
+
+#slidetituloHome {
+    font-size: 3rem;
+}
+
 #tituloHome {
     font-size: 1.875rem;
     margin: 3.44rem 0 0;
