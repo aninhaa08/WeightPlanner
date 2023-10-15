@@ -61,6 +61,7 @@ export function Componentes () {
                             <p className="precoSlider">R$10</p>
                         </div>
                     </div>
+                    //////TESTE /////////////////
                     <div className="keen-slider__slide number-slide3">
                         <img src={modulo} alt="" />
                         <div className="elementosSlider3">
