@@ -8,7 +8,7 @@
     justify-content: space-between;
     width: 100%;
     transition: background 0.5s ease;
-
+    
     background: $light-grayish;
 
     a {
@@ -84,7 +84,6 @@
 
     #menu-desktop {
         display: flex;
-        // background: $light-grayish;
         background: #000000;
         justify-content: center;
         align-items: center;
@@ -95,9 +94,10 @@
             left: 0;
             position: absolute;
             margin-left: 1rem;
+            margin-top: 0.5rem;
             img {
-                width: 15rem;
-                height: 4rem;;
+                width: 17rem;
+                height: 4.8rem;;
             }
         }
 
@@ -106,12 +106,12 @@
             position: absolute;
             margin-right: 1rem;
         }
-
+        
         a {
             padding-inline: 0;
             text-decoration: none;
             color: $light-grayish;
-            font-size: 1rem;
+            font-size: 1.08rem;
         }
 
         img {
@@ -128,7 +128,7 @@
         nav {
             display: flex;
             flex-direction: row;
-            gap: 1rem;
+            gap: 1.5rem;
         }
 
         .linksHover:hover {
@@ -136,4 +136,5 @@
             transform: scale(1.1);
         }
     }
+
 }

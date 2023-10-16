@@ -51,6 +51,7 @@ function Menu() {
         </div>
       </div>
 
+    <div className="menuFixo">
       <div id="menu-desktop">
         <Link className='logo' to={"/"}> <img src={LogoWeb} alt="" /> </Link>
           <nav>
@@ -59,8 +60,9 @@ function Menu() {
               <Link className='linksHover' to={"/componentes"}> Componentes </Link>
               <Link className='linksHover' to={"/bibliografia"}> Bibliografia </Link>
           </nav>
-        <Link className='linkLogin' to={"/login"}> <PiUserCircle size={24} /> </Link>
+        <Link className='linkLogin' to={"/login"}> <PiUserCircle size={40} /> </Link>
       </div>
+    </div>
     </header>
   )
 }
