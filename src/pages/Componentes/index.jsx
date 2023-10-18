@@ -48,7 +48,7 @@ export function Componentes () {
     {
         initial: 0,
         slides: {
-        perView: window.innerWidth >= 1440 ? 5 : 2,
+        perView: window.innerWidth >= 1200 ? 5 : 2,
         spacing: 20,
         },
     },

@@ -254,6 +254,167 @@
             }
         }
     }
+
+    @media (min-width: 1200px){
+
+        .arrow--left {
+            margin-left: 6rem;
+        }
+
+        .arrow--right {
+            margin-right: 6rem;
+        }
+
+        .thumbnail .keen-slider__slide {
+            #img1 {
+                height: 12rem;
+                width: 25rem;
+            }
+
+            #img2 {
+                height: 11rem;
+                width: 25rem;
+                margin-top: 1rem;
+            }
+
+            #img3 {
+                height: 11rem;
+                width: 26rem;
+            }
+
+            #img4 {
+                height: 11rem;
+                width: 26rem;
+            }
+
+            #img5 {
+                height: 12rem;
+                width: 25rem;
+            }
+
+            #img6 {
+                height: 12.5rem;
+                width: 25rem;
+            }
+
+            #img7 {
+                height: 11rem;
+                width: 25rem;
+            }
+
+            #img8 {
+                height: 12rem;
+                width: 26rem;
+            }
+        }
+        
+        .content {
+            margin-bottom: 10rem;
+        }
+
+        .carrosselWeb {
+            .componentesContainer {
+                margin-top: 3.5rem;
+            }
+        }
+
+        [class^="number-slide"],
+        [class*=" number-slide"] {
+            font-size: 1rem;
+
+            p {
+                margin-right: 6rem;
+            }
+
+            .precoSlider {
+                height: 1.5rem;
+                margin-top: 0.8rem;
+            }
+        }
+
+        .number-slide1 {
+            img {
+                height: 15rem;
+            }
+
+            .precoSlider {
+                margin-left: 3rem;
+            }
+        }
+
+        .number-slide2 {
+            img {
+                height: 13rem;
+            }
+
+            .precoSlider {
+                margin-left: 4.5rem;
+            }
+        }
+
+        .number-slide3 {
+            img {
+                height: 12.5rem;
+            }
+
+            #textoSlider3 {
+                width: 15rem;
+                text-align: center;
+            }
+
+            .precoSlider {
+                margin-left: 4.8rem;
+            }
+        }
+
+        .number-slide5 {
+            img {
+                height: 18rem;
+            }
+
+            .precoSlider {
+                margin-left: 4.5rem;
+            }
+        }
+
+        .number-slide6 {
+            img {
+                height: 14rem;
+            }
+
+            .precoSlider {
+                margin-left: 1.5rem;
+            }
+        }
+
+        .number-slide7 {
+            img {
+                height: 15rem;
+            }
+
+            .precoSlider {
+                margin-left: 0.3rem;
+            }
+        }
+
+        .number-slide8 {
+            img {
+                height: 16rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            #textoSlider8 {
+                width: 14rem;
+            }
+
+            .precoSlider {
+                margin-left: 4.2rem;
+            }
+        }
+    }
 }
 
 #tituloComponentes {

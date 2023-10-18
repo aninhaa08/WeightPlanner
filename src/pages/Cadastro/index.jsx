@@ -1,5 +1,6 @@
 import './style.scss'
 import logoWebBranco from '../../assets/logoWebBranco.png'
+import { Link } from 'react-router-dom'
 
 export function Cadastro () {
 

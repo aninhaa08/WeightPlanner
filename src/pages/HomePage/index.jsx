@@ -1,5 +1,5 @@
 import './style.scss'
-import Dbalanca from '../../assets/3Dbalanca.svg'
+import Dbalanca from '../../assets/balancaE3D.png'
 import ImgVideo from '../../assets/video.png'
 import Rodape from '../../components/Rodape'
 import imagemCard1 from '../../assets/imagemCardFrente.svg'
@@ -8,7 +8,8 @@ import imgSlide from '../../assets/imgSlide.svg'
 import { Link } from 'react-router-dom'
 
 
-export function Home() {
+export function Home(){
+
     return (
         <div className='homeConteudo'>
             <div className="slide">
@@ -22,8 +23,8 @@ export function Home() {
                     <img src={imgSlide} alt="" />
                 </div>
             </div>
-            <h1 id='tituloHome'>WeightPlanner</h1>
-            <h2 id='subtituloHome'>Pesar nunca foi tão fácil</h2>
+            <h1 id='tituloHome'></h1>
+            <h2 id='subtituloHome'>A WeightPlanner no dia a dia</h2>
             <div id='linha'> </div>
             <div className='ctHome'>
                 <p id='textoPrincipal'>Com a WeightPlanner, a balança da atualidade, sua vida se torna muito mais fácil. Com a possibilidade de conectar suas pesagens direto ao Excel, é possível organizar sua vida com um clique!</p>
@@ -56,9 +57,9 @@ export function Home() {
                 <div className="compraMobile">
                     <div id="caixaCompraM">
                         <p id="textoCompraM">Se interessou pela balança WeightPlanner?</p>
-                        <Link to='/cadastro'>
-                            <button id="botaoCompraM">Compre aqui</button>
-                        </Link>
+                        <div>
+                        <button id="botaoCompraM">Compre aqui</button>
+                        </div>
                     </div>
                 </div>
             </div>
