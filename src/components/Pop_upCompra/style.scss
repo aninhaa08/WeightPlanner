@@ -1,0 +1,9 @@
+@import '/src/variaveis';
+
+.compraConteudo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    background: $light-grayish;
+}

@@ -6,6 +6,7 @@ import imagemCard1 from '../../assets/imagemCardFrente.svg'
 import logo from '../../assets/logoWebBranco.png'
 import imgSlide from '../../assets/imgSlide.svg'
 import { Link } from 'react-router-dom'
+import Compra from '../../components/Pop_upCompra'
 
 
 export function Home(){
@@ -63,6 +64,7 @@ export function Home(){
                     </div>
                 </div>
             </div>
+            <Compra />
             <Rodape />
         </div>
     )
