@@ -8,7 +8,7 @@ import {
 import { useState } from 'react'
 import Logo from '../../assets/logoMobile.png'
 import LogoBranco from '../../assets/logoMobileBranco.png'
-import LogoWeb from '../../assets/LogoWebBranco.png'
+import LogoWeb from '../../assets/logoWebBranco.png'
 
 
 function Menu() {
