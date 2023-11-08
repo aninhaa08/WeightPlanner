@@ -380,3 +380,15 @@
     }
 
 }
+
+.divQR {
+
+    @media (max-width: 1000px) {
+        display: none;
+    }
+
+
+    @media (min-width: 1800px) {
+            margin-bottom: 10rem;
+    }
+}

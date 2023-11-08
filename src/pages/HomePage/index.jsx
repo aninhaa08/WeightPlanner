@@ -7,6 +7,7 @@ import logo from '../../assets/logoWebBranco.png'
 import imgSlide from '../../assets/imgSlide.svg'
 import Popup from '../../components/Pop_upCompra'
 import video from '../../assets/videoFuncionamento.mp4'
+import qrCode from '../../assets/qrCode.png'
 
 
 export function Home(){
@@ -78,6 +79,9 @@ export function Home(){
                             )}
                         </div>
                     </div>
+                </div>
+                <div className='divQR'>
+                    <img src={qrCode} alt="" />
                 </div>
             </div>
             <Rodape />
