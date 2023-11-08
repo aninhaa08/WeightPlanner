@@ -1,9 +1,8 @@
 import { BrowserRouter } from 'react-router-dom'
 import Router from './router'
 import Menu from './components/Menu'
-// import { Home } from './components/Pages/HomePage'
+import Rodape from './components/Rodape'
 
-// import './components/Pages/HomePage/style.scss'
 
 function App() {
   return (
@@ -11,9 +10,8 @@ function App() {
       <BrowserRouter>
         <Menu />
         <Router />
+        {/* <Rodape /> */}
       </BrowserRouter>
-      {/* <Home /> */}
-      
     </>
   )
 }

@@ -5,12 +5,14 @@
     padding: 0;
     box-sizing: border-box;
     
-
     font-family: 'Lexend Giga', sans-serif;
 }
 
 body {
     background: $linear-bg;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     color: $white;
     overflow-x: hidden;
 }
@@ -28,19 +30,3 @@ html, body {
     width: 100%;
     height: 100%;
 }
-
-// * {
-//     padding: 0;
-//     margin: 0;
-//     box-sizing: border-box;
-    
-// }
-
-// body {
-//     width: 100%;
-// }
-
-// #root {
-//     height: 100%;
-//     margin: auto;
-// }

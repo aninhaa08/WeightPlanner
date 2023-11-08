@@ -1,10 +1,12 @@
 import { Routes, Route } from 'react-router-dom'
 import { Home } from './pages/HomePage'
+import { Login } from './pages/Login'
+import { Cadastro } from './pages/Cadastro'
 import { Objetivo } from './pages/Objetivo'
 import { PublicoAlvo } from './pages/PublicoAlvo'
 import { Componentes } from './pages/Componentes'
-import { Funcionamento } from './pages/Funcionamento'
 import { Bibliografia } from './pages/Bibliografia'
+import { Compra } from './pages/Compra'
 
 
 function Router() {
@@ -12,11 +14,13 @@ function Router() {
     return(
         <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />}/>
+            <Route path="/cadastro" element={<Cadastro />}/>
             <Route path="/objetivo" element={<Objetivo />}/>
             <Route path="/publico" element={<PublicoAlvo />}/>
             <Route path="/componentes" element={<Componentes />} />
-            <Route path="/funcionamento" element={<Funcionamento />}/>
             <Route path="/bibliografia" element={<Bibliografia/>}/>
+            <Route path="/compra" element={<Compra/>}/>
         </Routes>
     )
 }

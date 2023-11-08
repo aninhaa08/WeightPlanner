@@ -1,0 +1,90 @@
+@import '/src/variaveis';
+
+.Conteudocompra {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     text-align: center;
+
+}
+
+.ftBalanca {
+   
+    margin-top: 3.2rem;
+    margin: 2rem; 
+
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 18rem;
+        height: 12.5rem;
+        border-radius: 1.25rem;
+        border: 1px solid #852BCB;
+    }
+
+    @media (min-width: 850px) {
+
+        margin-top: 4rem;
+
+        img {
+            width: 85rem;
+            height: 22rem;
+        }
+        
+    }
+
+}
+
+#Titulocompra {
+    font-size: 1.25rem;
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+
+    @media (min-width: 850px) {
+        font-size: 2.65rem;
+        margin-top: 3rem;
+    }
+}
+
+#Descricao {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 0.2rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: 850px) {
+        font-size: 1.3rem;
+        margin-top: 1.75rem;
+    }
+    
+}
+
+.preco {
+    display: flex;
+    gap: 2rem;
+    margin-top: 0.01rem;
+    text-align: center;
+
+    @media (min-width: 850px) {
+        margin-top: 2rem;
+    }
+}
+
+#btComprar{
+    // text-align: center;
+    font-size: 0.9rem;
+    background: rgba(217, 217, 217, 0.33);
+    border-radius: 0.6rem;
+    padding: 0.5rem;
+    margin-bottom: 3rem;
+    // align-items: center;
+
+    @media (min-width: 850px) {
+        font-size: 1.75rem;
+        margin-bottom: 7rem;
+    }
+}
+

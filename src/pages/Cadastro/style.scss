@@ -1,0 +1,234 @@
+@import '/src/variaveis';
+
+.cadastroMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: 1024px) {
+        display: none;
+    }
+}
+
+#tituloCadastro {
+    margin: 5.88rem 0 1rem;
+    text-align: center;
+    width: 18rem;
+    font-size: 1.5rem;
+}
+
+#linhaCadastro {
+    border: 1px solid $white;
+    width: 15.6rem;
+}
+
+.caixaCadastro {
+    margin: 3.3rem 0 3.2rem;
+    
+    
+    #subtituloCadastro {
+        text-align: left;
+        margin-bottom: 1.31rem;
+        font-size: 1rem;
+    }
+    
+    #formCadastro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        .input {
+            position: relative;
+
+            div {
+                width: 0.675rem;
+                height: 100%;
+                background: $grayish-violet;
+                position: absolute;
+                top: 0;
+            }
+            
+            input {
+                width: 16.8rem;
+                height: 2.5rem;
+            }
+
+            .inputFormC {
+                background: $light-gray;
+                border: none;
+                color: #646464;
+                padding-left: 1rem;
+            }
+
+        }
+
+        input:focus {
+            outline: 2px solid #646464;
+        }
+    }
+
+}
+
+#botaoCadastro {
+    background: $light-gray;
+    font-size: 1rem;
+    width: 11.25rem;
+    height: 2rem;
+    border-radius: 13.75rem;
+    border: none;
+    letter-spacing: -0.063rem;
+}
+
+#botaoCadastro:hover {
+    background: $violet;
+    color: $white;
+    box-shadow: 0 0px 50px 0px rgba($white, 0.3);
+    border: 1px solid $grayish-violet;
+}
+
+.cadastroWeb {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.5rem;
+    
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.caixaMaiorC {
+    display: flex;
+    align-items: center;
+    width: 66.8rem;
+    height: 30.9rem;
+    background: rgba(57, 14, 77, 0.46);
+    border-radius: 1.25rem;
+    margin-top: 4.2rem;
+    margin-bottom: 5rem;
+
+    .caixaCadastroW {
+        text-align: center;
+        margin: auto;
+        top: 0;
+        right: 0;
+        margin-right: 20rem;
+        position: absolute;
+        margin-top: 4rem;
+
+        @media (min-width: 1100px){
+            margin-right: 17.5rem;
+        }
+
+        @media (min-width: 1440px){
+            margin-right: 34.5rem;
+        }
+
+        #subtituloCadastroW {
+            font-size: 2rem;
+            letter-spacing: -0.063rem;
+            margin: 5.51rem 0 3rem;
+        }
+        
+        #formCadastroW {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .input {
+                position: relative;
+
+                input {
+                    width: 16.8rem;
+                    height: 2.5rem;
+                }
+    
+                div {
+                    width: 0.675rem;
+                    height: 100%;
+                    background: $grayish-violet;
+                    position: absolute;
+                    top: 0;
+                }
+
+                .inputFormCW {
+                    background: $light-gray;
+                    border: none;
+                    color: #646464;
+                    padding-left: 1rem;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+#botaoCadastroW {
+    background: $light-gray;
+    font-size: 1rem;
+    width: 11.25rem;
+    height: 2.5rem;
+    border-radius: 13.75rem;
+    border: none;
+    letter-spacing: -0.063rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 28rem 23rem 0 0;
+
+    @media (min-width: 1100px){
+        margin-right: 20.2rem;
+    }
+
+    @media (min-width: 1440px){
+        margin-right: 37rem;
+    }
+
+}
+
+#botaoCadastroW:hover {
+    background: $grayish-violet;
+    color: $white;
+    box-shadow: 0 0px 50px 0px rgba($white, 0.3);
+    border: 1px solid $violet;
+}
+
+.caixaMenorC {
+    width: 34.3rem;
+    height: 30.9rem;
+    background: rgba(57, 14, 77, 0.46);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $white;
+    border-radius: 1.25rem;
+
+    img {
+        position: absolute;
+        top: 0;
+        width: 17rem;
+        height: 4.5rem;
+        margin-top: 5rem;
+        margin-right: 1.5rem;
+    }
+
+    #tituloCadastroW {
+        width: 25rem;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    #linhaCadastroW {
+        width: 18.6rem;
+        height: 0.1rem;
+        background: $white;
+        margin: 1.69rem 0 3.2rem;
+    }
+}

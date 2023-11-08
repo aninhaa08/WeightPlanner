@@ -1,0 +1,245 @@
+@import '/src/variaveis';
+
+.main {
+    max-width: 1440px;
+    margin: auto;
+}
+
+#tituloPublico{
+    background: rgba(57, 14, 77, 0.46);
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+
+    @media (min-width: 850px){
+        padding-block: 1.5rem;
+        font-size: 2rem;
+        background: #0000;
+        margin-top: 2rem;padding-block: 1.2rem;
+        font-size: 2rem;
+    }
+
+    @media (min-width: 1100px) {
+        padding-block: 1.5rem;
+        font-size: 2.4rem;  
+    }
+}
+
+.pubAlvo_img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    img{
+        width: 15rem;
+        height: 15rem;
+        margin-top: 1rem;
+    }
+
+    @media (min-width: 1100px) {
+        img{
+            width: 34rem;
+            height: 34rem;
+            margin-top: 3rem;
+            margin-bottom: 5rem;
+        }
+    }
+}
+
+.Conexoes {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        position: absolute;
+        margin-top: 15rem;
+    }
+
+    @media (min-width: 768px) {
+        display: none;  
+    }
+}
+
+.Conexoes2{
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+        
+        position: absolute;
+        top: 0;
+        margin-top: 17rem;
+        img{
+            width: 10rem;
+            height: 4rem;
+            margin-left: 20rem;
+        }
+    }
+
+}
+
+.Conexoes3{
+
+    @media (max-width: 1100px) {
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+        
+        display: flex;
+        justify-content: right;
+
+        img{
+            width: 10rem;
+            height: 3rem;
+            top: 0;
+            position: absolute;
+            margin-top: 25rem;
+            margin-right: 20rem;
+        }
+    }
+
+}
+
+.caixaPG_Empresas {
+    @media (min-width: 768px) {
+        position: absolute;
+        top: 0;
+        margin-top: 15.20rem;
+    }
+}
+
+.PG_Empresas{
+    margin-top: 1rem;
+    position: relative;
+    display: flex;
+    gap: 0.3rem;
+    width: 50%;
+
+    img{
+        width: 2rem;
+        height: 3rem;
+        margin-left: 0.7rem;
+    }
+
+    @media (min-width: 768px) {
+
+        width: 0;
+
+        img{
+            width: 3.5rem;
+            height: 4rem;
+            margin-left: 3rem;
+        }
+    }
+        
+}
+
+#Subtitulo1{
+    font-size: 0.75rem;
+    margin-left: 0.4rem;
+    margin-bottom: 0.5rem;
+
+    @media (min-width: 768px) {
+
+        font-size: 1.2rem;
+        margin-top: 0.6rem;
+        min-width: 17.5rem;
+    }
+}
+
+#texto1 {
+    font-size: 0.8rem;
+    margin-left: 0.7rem;
+    margin-bottom: 1rem;
+    margin-right: 12.8rem;
+
+    @media (min-width: 768px) {
+
+        width: 24rem;
+        font-size: 1rem;
+        margin-left:3rem;
+        margin-top: 1rem;
+
+    }
+}
+
+.caixaUsoPessoal {
+    @media (min-width: 768px) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 27.75rem;
+    }
+    @media (min-width: 1500px) {
+        position: absolute;
+        top: 0;
+        right: 14rem;
+        margin-top: 27.75rem;
+    }
+}
+
+.Pessoal{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4.3rem;
+    margin-top: -4.2rem;
+
+
+    img{
+        width: 2rem;
+        height: 3rem;
+        margin-right: 0.7rem;
+    }
+
+    @media (min-width: 768px) {
+
+        img{
+            width: 3.5rem;
+            height: 4rem;
+            margin-right: 4rem;
+        }
+    }
+
+}
+
+#Subtitulo2{
+    display: flex;
+    text-align: right;
+    font-size: 0.75rem;
+    width: 1rem;
+    margin-top: 0.8rem;
+    
+
+    @media (min-width: 768px) {
+
+        font-size: 1.2rem;
+        margin-right: 4rem;
+        margin-bottom: 1rem;
+        margin-top: 0.6rem;
+        margin-right: 2.8rem;
+    }
+}
+
+#texto2 {
+    font-size: 0.8rem;
+    text-align: right;
+    margin-right: 0.7rem;
+    margin-left: 12rem;
+    margin-bottom: 4rem;
+
+    @media (min-width: 768px) {
+
+        width: 24.9rem ;
+        font-size: 1rem;
+        margin-right: 4rem;
+        margin-bottom: 3rem;
+        text-align: right;
+    }
+}
+

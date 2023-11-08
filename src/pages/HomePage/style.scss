@@ -1,105 +1,382 @@
 @import '/src/variaveis';
 
 .homeConteudo {
-    width: 100vw;
+    overflow: visible;
     display: flex;
-    flex-direction: column;
-
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 0;
+    margin-top: 2rem;
+
+
+    #tituloHome {
+        margin-top: 1.8rem;
+    }
+
+    @media (min-width: 1024px){
+
+        #tituloHome {
+            font-size: 3rem;
+        }
+
+        #subtituloHome {
+            font-size: 2rem;
+        }
+
+        #linha {
+            width: 46rem;
+        }
+
+        .ctHome {
+            margin-top: 2.4rem;
+        }
+
+        #textoPrincipal {
+            width: 50rem;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            margin-inline: auto;
+        }
+
+        .dbalanca {
+            img {
+                width: 40rem;
+                height: 20rem;
+            }
+        }
+
+        .videoContainer {
+            #tituloVideo {
+                font-size: 1rem;
+                margin-bottom: 5rem;
+            }
+        
+            img {
+                width: 28rem;
+                height: 15rem;
+            }
+        }
+
+        .compraWeb {
+            margin: 5rem 0 10rem;
+        }
+    }
+
+    @media (min-width: 1440px){
+        #textoPrincipal {
+            width: 65rem;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media (min-width: 1800px){
+
+        #tituloHome {
+            width: 74rem;
+            font-size: 3.8rem;
+            margin-bottom: 1rem;
+        }
+
+        #subtituloHome {
+            margin-bottom: 2rem;
+        }
+        
+        #linha {
+            width: 75rem;
+        }
+    }
+}
+
+.slide {
+    display:none;
+    
+    @media (min-width: 850px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2.5rem;
+        gap: 5rem;
+    }
+
+    @media (min-width: 1800px) {
+        margin: 15rem 0 15rem 0;
+    }
+}
+
+.contentSlide {
+    
+    @media (min-width: 850px){
+        margin-left: 3rem;
+        text-align: left;
+    }
+    
+}
+
+#slidetituloHome {
+    @media (min-width: 850px){
+        font-size: 3rem;
+        margin-bottom: 0.75rem;
+    }
+
+    @media (min-width: 1800px){
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+}
+
+#slidesubtituloHome {
+    @media (min-width: 850px){
+        font-weight: 400;
+        font-size: 2.2rem;
+        color: $purple-pink;
+        margin-bottom: 1rem;
+    }
+    
+    @media (min-width: 1800px){
+        font-size: 3rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+#linha_slide {
+    @media (min-width: 850px){
+        border: 1px solid $white;
+        width: 41rem;
+    }
+    
+    @media (min-width: 850px){
+        width: 49rem;
+    }
 }
 
 #tituloHome {
-    font-size: 15px;
-    margin: 3.44rem 0 0;
-    text-transform: uppercase;
+    font-size: 1.6rem;
+    width: 23rem;
+
+    
+}
+
+.textoPrincipal_slide {
+    @media (min-width: 850px){
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        max-width: 42rem;
+    } 
+
+    @media (min-width: 1800px){
+        font-size: 1.6rem;
+        margin-top: 2rem;
+        max-width: 50rem;
+    } 
+}
+
+.imgslide {
+    @media (min-width: 850px){
+        img {
+            width: 35rem;
+            height: 35rem; 
+        }
+    } 
+
+    @media (min-width: 1800px){
+        img {
+            width: 48rem;
+            height: 38rem; 
+        }
+    } 
+}
+
+#subtituloHome {
+    font-weight: 400;
+    font-size: 1rem;
+    color: $purple-pink;
+    margin: 1rem 0 0.5rem 0
 }
 
 #linha {
     border: 1px solid $white;
-    width: 16.9rem;
+    width: 18rem;
     margin: 0.69rem 0;
 }
 
 .ctHome {
     margin-top: 1.81rem;
-    margin-inline: auto;
-    width: 80%;
+    padding-inline: 26px;
 }
 
 #textoPrincipal {
-    text-align: center;
-    font-size: 0.625rem;
+    font-size: 0.875rem;
 }
 
 .dbalanca {
+    margin-top: 6rem;
+    img {
+        width: 18.4375rem;
+        height: 10.125rem;  
+    }
+}
+
+.videoContainer {
+    #tituloVideo {
+        font-size: 0.725rem;
+        margin-top: 6.39rem;
+        margin-bottom: 2.12rem;
+        font-weight: 600;
+    }
+
+    video {
+        width: 20rem;
+        box-shadow: 0 0px 50px 0px rgba($white, 0.1);
+
+        @media (min-width: 1200px){
+            width: 50rem;
+        }
+    }
+}
+
+.compraWeb {
     display: flex;
-    align-items: center;
     justify-content: center;
-
-    margin-top: 5rem;
-    
-}
-
-// CARD GIRATÓRIO
-
-.containerCard {
-    display: flex;
-}
-
-.girar-card {
-    margin: auto;
-    margin-top: 5rem;
-    
-    background-color: transparent;
-    width: 190px;
-    height: 254px;
-    perspective: 1000px;
-    font-family: sans-serif;
-  }
-  
-//   .textoCard {
-//     font-size: 1.5em;
-//     font-weight: 900;
-//     text-align: center;
-//     margin: 0;
-//   }
-  
-.girar-card-frente {
-    
     position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-  
-.girar-card .girar-card-frente:hover {
-    transform: rotateY(180deg);
-}
-  
-.frente-card, .atras-card {
-    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border: 1px solid $violet;
-    border-radius: 1rem;
-}
-  
-.frente-card {
-    background: rgba($violet, 0.2);
+
+
+    .flip-card {
+        width: 15.5rem;
+        height: 19.4rem;
+        perspective: 1000px;
+        font-family: sans-serif;
+        margin: 8rem 0 5rem;
+        font-weight: 400;
     
+        .flip-card-conteudo {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+    
+            .flip-card-frente {
+                background: rgba($white, 0.30);
+                color: $white;
+                align-items: center;
+    
+                img {
+                    height: 12.5rem;
+                }
+    
+                .texto {
+                    margin-top: 2rem;
+                    width: 13rem;
+                    font-size: 0.906rem;
+                }
+            }
+              
+            .flip-card-atras {
+                background: $grayish-violet;
+                color: $dark-violet;
+                transform: rotateY(180deg);
+                align-items: center;
+                
+                .texto {
+                    width: 11.5rem;
+                    font-size: 1.2rem;
+                    position: absolute;
+                    top: 0;
+                    margin-top: 5rem;
+                }
+
+                img {
+                    width: 12rem;
+                    top: 0;
+                    position: absolute;
+                }
+
+                #botaoCard {
+                    margin-top: 10rem;
+                    width: 10rem;
+                    height: 3rem;
+                    border-radius: 4.2rem;
+                    border: 1px solid $dark-magenta;
+                    color: $dark-magenta;
+                    background: $light-grayish;
+                    font-weight: 600;
+                    letter-spacing: -0.125rem;
+                    font-size: 0.925rem;
+                }
+            }
+        }
+    }
+
+    .flip-card:hover #botaoCard:hover {
+        cursor: pointer;
+        background: $dark-magenta;
+        color: $white;
+        font-weight: 400;
+        transition: 0.3s ease-in;
+    }
+    
+    .flip-card:hover .flip-card-conteudo {
+        transform: rotateY(180deg);
+    }
+      
+    .flip-card-frente, .flip-card-atras {
+        box-shadow: 0 0px 50px 0px rgba($white, 0.2);
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border: 1px solid $violet;
+        border-radius: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
   
-.atras-card {
-    background: $grayish-violet;
-    color: $dark-magenta;
-    transform: rotateY(180deg);
+.compraMobile {
+    margin-bottom: 7rem;
+
+    #textoCompraM {
+        font-size: 1rem;
+        margin: 7rem 0 0 1rem;
+        margin-bottom: 2.12rem;
+        text-transform: uppercase;
+        text-align: left;
+        font-weight: 600;
+        letter-spacing: -0.063rem;
+    }
+
+    #botaoCompraM {
+        margin-top: 2rem;
+        width: 10rem;
+        height: 3rem;
+        border-radius: 4.2rem;
+        border: 1px solid $dark-magenta;
+        color: $dark-magenta;
+        background: $light-grayish;
+        font-weight: 600;
+        letter-spacing: -0.125rem;
+        font-size: 0.925rem;
+        margin-inline: auto;
+
+        #botaoCompraM:hover {
+            cursor: pointer;
+            background: $dark-magenta;
+            color: $white;
+            font-weight: 400;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        display: none;
+    }
+
 }
