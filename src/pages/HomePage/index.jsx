@@ -1,15 +1,24 @@
 import './style.scss'
+import React, { useState } from 'react';
 import Dbalanca from '../../assets/balancaE3D.png'
-import ImgVideo from '../../assets/video.png'
 import Rodape from '../../components/Rodape'
 import imagemCard1 from '../../assets/imagemCardFrente.svg'
 import logo from '../../assets/logoWebBranco.png'
 import imgSlide from '../../assets/imgSlide.svg'
-import { Link } from 'react-router-dom'
-import Compra from '../../components/Pop_upCompra'
+import Popup from '../../components/Pop_upCompra'
+import video from '../../assets/videoFuncionamento.mp4'
 
 
 export function Home(){
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+    const openPopup = () => {
+        setIsPopupOpen(true);
+    };
+
+    const closePopup = () => {
+        setIsPopupOpen(false);
+    };
 
     return (
         <div className='homeConteudo'>
@@ -34,7 +43,10 @@ export function Home(){
                 </div>
                 <div className="videoContainer">
                     <h2 id='tituloVideo'>BALANÇA COM ARDUINO LEONARDO – IMPRIMINDO VALORES DIRETO NO EXCEL!</h2>
-                    <img src={ImgVideo} alt="" />
+                    <video controls>
+                        <source src={video} type='video/mp4'/>
+                        Desculpa, o seu navegador não suporta vídeos incorporados!
+                    </video>
                 </div>
             </div>
             <div className="caixaCompra">
@@ -48,23 +60,26 @@ export function Home(){
                             <div className="flip-card-atras">
                                 <img src={logo} alt="" />
                                 <p className="texto">Então a WeightPlanner é perfeita para você!</p>
-                                <Link to='/cadastro'>
-                                    <button id="botaoCard">Comprar</button>
-                                </Link>
+                                <button id="botaoCard" onClick={openPopup}>Comprar</button>
                             </div>
                         </div>
                     </div>
+                    {isPopupOpen === true && (
+                        <Popup onClose={closePopup}/>
+                    )}
                 </div>
                 <div className="compraMobile">
                     <div id="caixaCompraM">
                         <p id="textoCompraM">Se interessou pela balança WeightPlanner?</p>
                         <div>
-                        <button id="botaoCompraM">Compre aqui</button>
+                            <button id="botaoCompraM" onClick={openPopup}>Compre aqui</button>
+                            {isPopupOpen === true && (
+                                <Popup onClose={closePopup}/>
+                            )}
                         </div>
                     </div>
                 </div>
             </div>
-            <Compra />
             <Rodape />
         </div>
     )

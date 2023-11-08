@@ -1,9 +1,287 @@
 @import '/src/variaveis';
 
 .compraConteudo {
+
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     position: relative;
 
+    margin-inline: auto;
+    
+
     background: $light-grayish;
-}
+    border-radius: 1rem;
+    width: 20rem;
+    height: 28rem;
+
+    .tituloCompra, p {
+        color: $black;
+    }
+
+    .tituloCompra {
+        font-size: 1rem;
+        text-align: left;
+
+        width: 15rem;
+        margin-left: 2.5rem;
+        margin-top: 1rem;
+    }
+
+    .descricao {
+        width: 15rem;
+        color: #6C6C6C;
+        font-size: 0.6rem;
+        margin: 1rem 0 0 2.5rem;
+        text-align: left;
+    }
+
+    .imgCompra {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            width: 16rem;
+            height: 10rem;
+
+            background: rgba(125, 95, 149, 0.50);
+            border-radius: 1rem;
+
+
+            img {
+                width: 14.5rem;
+                height: 10rem;
+
+                margin-left: 2rem;
+            }
+        }
+    }
+
+    .fechar {
+        display: flex;
+        justify-content: right;
+        margin: 1rem 1rem 0 0;
+        
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $black;
+
+            background: $light-grayish;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            border: none;
+        }
+
+        button:hover {
+            background: $violet;
+            border: none;
+            color: $white;
+        }
+    }
+
+    .caixaQP {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.4rem;
+
+        .quant {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            width: 4rem;
+            height: 1rem;
+            margin: 1.5rem 0 0 2.5rem;
+
+            background: #D2D2D2;
+            border-radius: 0.3rem;
+
+            button {
+                border: none;
+                background: none;
+                cursor: pointer;
+            }
+        }
+
+        .preco {
+            margin-right: 2.5rem;
+            font-size: 1rem;
+            margin-top: 1.5rem;
+        }
+    }
+
+    .carrinho {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 1.2rem;
+        
+
+        button {
+            width: 16rem;
+            height: 2rem;
+
+            background: $violet;
+            color: $white;
+            font-size: 0.7rem;
+            border-radius: 1.5rem;
+            border: none;
+
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: $dark-magenta;
+            color: $white;
+            border: none;
+        }
+    }
+
+    @media (min-width: 850px) {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+
+        background: $light-grayish;
+        border-radius: 1.25rem;
+        width: 30rem;
+        height: 36rem;
+
+        .tituloCompra {
+            font-size: 1.5rem;
+            text-align: left;
+
+            width: 23rem;
+            margin-left: 3.5rem;
+            margin-top: 1rem;
+        }
+
+        .descricao {
+            width: 23rem;
+            color: #6C6C6C;
+            font-size: 0.8rem;
+            margin: 1rem 0 0 3.5rem;
+            text-align: left;
+        }
+    
+
+    .fechar {
+        display: flex;
+        justify-content: right;
+        margin: 1rem 1rem 0 0;
+        
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $black;
+
+            background: $light-grayish;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: $violet;
+            border: none;
+            color: $white;
+        }
+    }
+
+    .imgCompra {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            width: 23rem;
+            height: 15rem;
+
+            background: rgba(125, 95, 149, 0.50);
+            border-radius: 1rem;
+
+
+            img {
+                width: 25rem;
+                height: 15rem;
+
+                margin-left: 1.5rem;
+            }
+        }
+    }
+
+    .caixaQP {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .quant {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            width: 8rem;
+            height: 2rem;
+            margin: 1.5rem 0 0 3.5rem;
+
+            background: #D2D2D2;
+            border-radius: 0.3rem;
+            font-size: 1.1rem;
+
+            button {
+                border: none;
+                background: none;
+                cursor: pointer;
+            }
+        }
+
+        .preco {
+            margin-right: 3.5rem;
+            font-size: 1.3rem;
+        }
+    }
+
+    .carrinho {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 1.2rem;
+        
+
+        button {
+            width: 18rem;
+            height: 3rem;
+
+            background: $violet;
+            color: $white;
+            font-size: 0.9rem;
+            border-radius: 1.5rem;
+            border: none;
+
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: $dark-magenta;
+            color: $white;
+            border: none;
+        }
+    }
+}}
