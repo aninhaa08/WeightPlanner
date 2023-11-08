@@ -33,11 +33,11 @@ export function Home(){
                     <img src={imgSlide} alt="" />
                 </div>
             </div>
-            <h1 id='tituloHome'></h1>
-            <h2 id='subtituloHome'>A WeightPlanner no dia a dia</h2>
+            <h1 id='tituloHome'>A WeightPlanner no dia a dia</h1>
+            <h2 id='subtituloHome'>Rapidez e praticidade lado a lado em suas pesagens</h2>
             <div id='linha'> </div>
             <div className='ctHome'>
-                <p id='textoPrincipal'>Com a WeightPlanner, a balança da atualidade, sua vida se torna muito mais fácil. Com a possibilidade de conectar suas pesagens direto ao Excel, é possível organizar sua vida com um clique!</p>
+                <p id='textoPrincipal'>Visando o seu conforto e um melhor controle de suas dietas, a WeightPlanner oferece apoio em suas pesagens, modernizando-as e tornando seus registros 80% mais ágeis.</p>
                 <div className="dbalanca"> 
                     <img src={Dbalanca} alt="" /> 
                 </div>

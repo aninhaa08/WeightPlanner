@@ -7,10 +7,12 @@
     flex-direction: column;
     text-align: center;
     z-index: 0;
+    margin-top: 2rem;
 
-#tituloHome {
-    margin-top: 1.8rem;
-}
+
+    #tituloHome {
+        margin-top: 1.8rem;
+    }
 
     @media (min-width: 1024px){
 
@@ -66,6 +68,23 @@
             width: 65rem;
             font-size: 1.4rem;
             margin-bottom: 1rem;
+        }
+    }
+
+    @media (min-width: 1800px){
+
+        #tituloHome {
+            width: 74rem;
+            font-size: 3.8rem;
+            margin-bottom: 1rem;
+        }
+
+        #subtituloHome {
+            margin-bottom: 2rem;
+        }
+        
+        #linha {
+            width: 75rem;
         }
     }
 }
@@ -133,10 +152,10 @@
 }
 
 #tituloHome {
-    @media (min-width: 850px){
-        font-size: 1.875rem;
-        margin: 3.44rem 0 0;
-    } 
+    font-size: 1.6rem;
+    width: 23rem;
+
+    
 }
 
 .textoPrincipal_slide {
@@ -171,14 +190,14 @@
 
 #subtituloHome {
     font-weight: 400;
-    font-size: 0.9375rem;
+    font-size: 1rem;
     color: $purple-pink;
-    margin-block: 0.30rem;
+    margin: 1rem 0 0.5rem 0
 }
 
 #linha {
     border: 1px solid $white;
-    width: 16.9rem;
+    width: 18rem;
     margin: 0.69rem 0;
 }
 
@@ -188,7 +207,7 @@
 }
 
 #textoPrincipal {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .dbalanca {

@@ -201,56 +201,56 @@
         }
     }
 
-    @media (min0-width: 1800px) {
+    @media (min-width: 1800px) {
 
-        .arrow--left {
-            margin-left: 13rem;
+        .carrosselWeb .arrow--left {
+            margin-left: 14rem;
         }
 
-        .arrow--right {
-            margin-right: 13rem;
+        .carrosselWeb .arrow--right {
+            margin-right: 14rem;
         }
 
-        .thumbnail .keen-slider__slide {
+        .carrosselWeb .thumbnail .keen-slider__slide {
             #img1 {
                 height: 13rem;
-                width: 25rem;
+                width: 50rem;
             }
 
             #img2 {
                 height: 14rem;
-                width: 25rem;
+                width: 50rem;
                 margin-top: 1rem;
             }
 
             #img3 {
                 height: 14rem;
-                width: 26rem;
+                width: 50rem;
             }
 
             #img4 {
                 height: 13rem;
-                width: 26rem;
+                width: 50rem;
             }
 
             #img5 {
                 height: 13rem;
-                width: 25rem;
+                width: 50rem;
             }
 
             #img6 {
                 height: 14rem;
-                width: 25rem;
+                width: 50rem;
             }
 
             #img7 {
                 height: 13rem;
-                width: 25rem;
+                width: 50rem;
             }
 
             #img8 {
                 height: 13.5rem;
-                width: 26rem;
+                width: 50rem;
             }
         }
     }
